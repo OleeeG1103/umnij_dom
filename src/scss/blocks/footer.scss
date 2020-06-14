@@ -8,6 +8,7 @@ footer {
   background: #030021;
   mix-blend-mode: normal;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
 
   .sound-nav {
     display: flex;
@@ -109,9 +110,7 @@ footer {
       img {
         position: absolute;
       }
-      &__off {
-        visibility: visible;
-      }
+
       &__on {
         visibility: hidden;
       }
