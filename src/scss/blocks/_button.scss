@@ -1,0 +1,81 @@
+.btn {
+  mix-blend-mode: normal;
+  /*border: 2px solid rgba(255, 255, 255, 0.1);
+  */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+
+  font-style: normal;
+  font-weight: normal;
+  border: none;
+  border-radius: 8px;
+  /* font-size: 24px;
+  line-height: 30px;
+  */
+  color: #ffffff;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #00a523;
+
+  &:hover {
+    background: #94e264;
+    transition: 0.3s;
+  }
+}
+
+.btn-secondary {
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+  }
+}
+
+.btn-active {
+  border: 1px solid #64e265;
+  color: #94e264;
+}
+
+.btn-block-big {
+  min-width: 255px;
+  width: 255px;
+  height: 80px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.btn-block-small {
+  min-width: 182px;
+  width: 182px;
+  height: 80px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.btn-square {
+  min-width: 88px;
+  width: 88px;
+  height: 80px;
+  font-size: 32px;
+  line-height: 40px;
+  box-shadow: none;
+}
+
+.btn-circle {
+  min-width: 80px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 32px;
+  line-height: 40px;
+  box-shadow: none;
+}
+
+.btn-secondary.btn-block-big,
+.btn-secondary.btn-square {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}

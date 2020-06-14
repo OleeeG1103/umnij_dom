@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 26px 66px 0 45px;
+  flex: 0 0 auto;
+  position: relative;
+
+  .date,
+  .bkc__text {
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  .bkc {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 45px;
+    visibility: hidden;
+    & img {
+      margin-right: 7.5px;
+    }
+  }
+
+  .return {
+      position: absolute;
+      left: 45px;
+      visibility: hidden;
+      & img {
+        width: 31.34px;
+        height: 20.5px;
+      } 
+    
+  }
+
+  
+}
