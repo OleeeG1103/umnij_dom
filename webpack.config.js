@@ -5,6 +5,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 
 function generateHtmlPlugins(templateDir) {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
@@ -86,6 +87,52 @@ const config = {
         include: path.resolve(__dirname, "src/html/includes"),
         use: ["raw-loader"],
       },
+      {
+        test: /\.svg$/,
+        include: [
+          path.resolve(__dirname, "src/img/channel"),
+          path.resolve(__dirname, "src/img/icon"),
+        ],
+        use: [
+          {
+            loader: "svg-sprite-loader",
+            options: {
+              extract: true,
+              outputPath: "/img/sprites/",
+              spriteFilename: svgPath => svgPath.includes("src/img/channel") ? "sprite-channels.svg" : "sprite-icons.svg",
+              runtimeCompat: true
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpg|svg|gif)$/,
+        exclude: [
+          path.resolve(__dirname, "src/img/icon"),
+          path.resolve(__dirname, "src/img/channel")
+        ],
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "src/img/[name].[ext]",
+              publicPath: "/dist",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(ttf|woff|eot)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "src/fonts/[name].[ext]",
+              publicPath: "/dist",
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
@@ -107,6 +154,9 @@ const config = {
           to: "./img",
         },
       ],
+    }),
+    new SpriteLoaderPlugin({
+      plainSprite: true
     }),
   ].concat(htmlPlugins),
 };
