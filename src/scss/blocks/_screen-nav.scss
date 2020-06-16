@@ -1,0 +1,13 @@
+.screen-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .camera__subtitle {
+      font-size: 18px;
+      line-height: 23px;
+      text-align: center;
+      color: #ffffff;
+      opacity: 0.5;
+    }
+  }
