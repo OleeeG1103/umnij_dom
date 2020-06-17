@@ -1,0 +1,24 @@
+.number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 19px;
+  padding: 0 5px 0 8px;
+  &__output {
+    font-size: 28px;
+    line-height: 32px;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+  &__clear {
+    width: 41px;
+    height: 28px;
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+.call-nav__number.number {
+  width: 263px;
+}

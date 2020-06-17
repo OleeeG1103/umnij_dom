@@ -10,7 +10,11 @@ $font-stack: "Arial", "Helvetica", sans-serif;
 @import "./blocks/open-panel";
 @import "./blocks/demonstration-tv";
 @import "./blocks/number-nav";
+@import "./blocks/speed-dial";
+@import "./blocks/number";
+@import "./blocks/number-input";
 @import "./blocks/meeting-room";
+@import "./blocks/screen-nav";
 @import "./blocks/footer";
 @import "./blocks/some-block";
 @import "./blocks/button";
@@ -37,6 +41,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 

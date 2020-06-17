@@ -1,0 +1,33 @@
+.number-input {
+  width: 272px;
+  height: 368px;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-wrap: wrap;
+  .btn__circle {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.number-input.classrooms__number-input {
+  width: 255px;
+  height: 345px;
+  margin-top: 49px;
+  .btn__circle {
+    width: 75px;
+    min-width: 75px;
+    height: 75px;
+  }
+
+  .btn__circle.disabled {
+    visibility: hidden;
+  }
+}

@@ -1,13 +1,102 @@
 .screen-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 200px;
+  margin-right: 48px;
 
-    .camera__subtitle {
-      font-size: 18px;
-      line-height: 23px;
-      text-align: center;
-      color: #ffffff;
-      opacity: 0.5;
+  .camera {
+    width: 176px;
+    height: 207px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 44px;
+    display: none;
+
+    .btn__square-sm {
+      min-width: 80px;
+      width: 80px;
+      height: 80px;
     }
   }
+
+  .controller {
+    width: 198px;
+    height: 198px;
+    border-radius: 50%;
+    background-image: url(../img/controller.png);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 53px;
+    
+    &__btn {
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      background: #ffffff;
+      font-size: 18px;
+      line-height: 23px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #4d4b6c;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+    img {
+      width: 20px;
+      height: 10px;
+    }
+    .controller__top {
+      transform: rotate(-180deg);
+      position: absolute;
+      top: 25px;
+
+    }
+    .controller__right {
+      transform: rotate(-90deg);
+      position: absolute;
+      right: 25px;
+    } 
+    .controller__bottom {
+      position: absolute;
+      bottom: 25px;
+    } 
+    .controller__left {
+      transform: rotate(90deg);
+      position: absolute;
+      left: 25px;
+    }   
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+
+  .camera__subtitle {
+    margin-bottom: -16px;
+  }
+
+  .screen {
+    .btn {
+      box-shadow: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 8px;
+      .btn__icon {
+        margin: 0 17px 0 17px;
+      }
+    }
+  }
+}

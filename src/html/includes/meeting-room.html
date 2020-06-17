@@ -1,39 +1,77 @@
 <div class="meeting-room">
-    <div class="number-navigation">
-        <div class="number-navigation__exit">
-            <a  href="#"><img src="./img/icon/exit.svg" alt="reset" /></a>
+    <div class="classrooms">
+        <div class="rooms">
+            <a class="rooms__number-input_exit" href="#"><img src="./img/icon/exit.svg" alt="exit" /></a>
         </div>
-        <div class="number-navigation__input">
-            <button class="btn btn__secondary btn__circle">1</button>
-            <button class="btn btn__secondary btn__circle">2</button>
-            <button class="btn btn__secondary btn__circle">3</button>
-            <button class="btn btn__secondary btn__circle">4</button>
-            <button class="btn btn__secondary btn__circle">5</button>
-            <button class="btn btn__secondary btn__circle">6</button>
-            <button class="btn btn__secondary btn__circle">7</button>
-            <button class="btn btn__secondary btn__circle">8</button>
-            <button class="btn btn__secondary btn__circle">9</button>
-            <button class="btn btn__secondary btn__circle">0</button>
-            <button class="btn btn__secondary btn__circle">#</button>
-            <button class="btn disabled"></button>
+
+        <div class="speed-dial classrooms-speed-dial">
+
+            <button class="btn btn__secondary btn__square btn__square-sm speed-dial__keyboard-open" >
+                <img src="./img/icon/set.svg" alt="keyboard" /></a>
+            </button>
+            <span class="speed-dial__heading classrooms__sped-dial-heading">Клавиатура</span>
+                
+            <div class="speed-dial__item classrooms-speed-dial__item-1">243345245</div>
+    
+            <div class="speed-dial__item classrooms-speed-dial__item-2">3233</div> 
+
+                <span class="speed-dial__subtitle classrooms-speed-dial__subtitle subtitle">Быстрый набор</span>
+             
+        </div>
+        
+        <div class="number-input classrooms__number-input">
+            <div class="numper-input__item">
+                <button class="btn btn__secondary btn__circle">1</button>
+            </div>
+            <div class="numper-input__item">
+                <button class="btn btn__secondary btn__circle">2</button>
+            </div>
+            <div class="numper-input__item">
+                <button class="btn btn__secondary btn__circle">3</button>
+            </div>
+            <div class="numper-input__item">
+                <button class="btn btn__secondary btn__circle">4</button>
+            </div>
+            <div class="numper-input__item">
+                <button class="btn btn__secondary btn__circle">5</button>
+            </div>
+            <div class="numper-input__item">
+                <button class="btn btn__secondary btn__circle">6</button>
+            </div>
+            <div class="numper-input__item">
+                <button class="btn btn__secondary btn__circle">7</button>
+            </div>
+            <div class="numper-input__item">
+                <button class="btn btn__secondary btn__circle">8</button>
+            </div>
+            <div class="numper-input__item">
+                <button class="btn btn__secondary btn__circle">9</button>
+            </div>
+            <div class="numper-input__item">
+                <button class="btn btn__secondary btn__circle">0</button>
+            </div>
+            <div class="numper-input__item">
+                <button class="btn btn__secondary btn__circle">#</button>
+            </div>
+            <div class="numper-input__item">
+                <button class="btn__circle disabled"></button>
+            </div>
         </div>
     </div>
     <div class="call-nav">
-        <div class="call-nav__number">
-
-            <div class="call-nav__number-output">192168254254</div>
-
-            <a href="#" class="call-nav-number-clear">
+        <div class="call-nav__number number">
+            <div class="call-nav__number-output number__output">192168254254</div>
+            <a href="#" class="cell-nav__number-clear number__clear">
                 <img src="./img/icon/reset.svg" alt="reset" />
             </a>
         </div>
 
-        <div class="cell-nav__menu">
-            <button class="btn btn__primary btn btn__circle"><img src="./img/icon/phone.svg" alt="phone" />
+        <div class="call-nav__menu">
+            <button class="btn btn__primary btn btn__circle call-nav__menu-btn"><img src="./img/icon/phone.svg" alt="phone" />
             </button>
-            <button class="btn btn__secondary btn__circle btn__active"><img src="./img/icon/microphone.svg" alt="microphone on" />
+            <button class="btn btn__secondary btn__circle btn__active call-nav__menu-btn"><img src="./img/icon/microphone.svg" alt="microphone on" />
             </button>
-            <button class="btn btn__red btn btn__circle"><img src="./img/icon/phone_off.svg" alt="phone off" />
+            <button class="btn btn__red btn btn__circle call-nav__menu-btn"><img src="./img/icon/phone_off.svg" alt="phone off" />
             </button>
         </div>
 
@@ -41,18 +79,46 @@
 
     </div>
     <div class="screen-nav">
-        <div class="camera">
-            <button class="btn btn__secondary btn__block">1</button>
-            <button class="btn btn__secondary btn__block">2</button>
-            <button class="btn btn__secondary btn__block btn__active">3</button>
-            <button class="btn btn__secondary btn__block">4</button>
-            <span class="camera__subtitle">Положение камеры</span>
+
+        <div class="controller">
+            
+                <img class="controller__top" src="./img/icon/top_right_bottom_left.svg" alt="top" />
+            
+            
+                <img class="controller__left" src="./img/icon/top_right_bottom_left.svg" alt="right" />
+                <button class="controller__btn">OK</button>
+                <img class="controller__right" src="./img/icon/top_right_bottom_left.svg" alt="left" />
+            
+            
+                <img class="controller__bottom" src="./img/icon/top_right_bottom_left.svg" alt="bottom" />
+            
         </div>
+
+        <div class="camera">    
+                     
+            <button class="btn btn__secondary btn__square btn__square-sm">1</button>
+            <button class="btn btn__secondary btn__square btn__square-sm">2</button> 
+    
+ 
+            <button class="btn btn__secondary btn__square btn__square-sm btn__active">3</button>
+            <button class="btn btn__secondary btn__square btn__square-sm">4</button>   
+         
+            <span class="camera__subtitle subtitle">Положение камеры</span>
+            </div>
+            
+        
 
         <div class="screen">
-            <img src="./img/icon/view.svg" alt="view" />
+            <button class="btn btn__secondary btn__block">
+                <img src="./img/icon/prev.svg" alt="prev" />
+                <img class="btn__icon" src="./img/icon/view.svg" alt="view" />
+                <img src="./img/icon/next.svg" alt="next" />
+            </button>
+            <span class="screen__subtitle subtitle">Вид экрана</span> 
         </div>
+            
+        
 
-        <span class="camera__subtitle">Вид экрана</span>        
+               
     </div>
 </div>
