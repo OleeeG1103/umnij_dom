@@ -1,0 +1,61 @@
+.conversation-nav {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.conversation-menu {
+  display: flex;
+  .microphone__column {
+    margin-right: 36px;
+    position: relative;
+    .microphone__column-btn-keyboard {
+      position: absolute;
+      top: 60px;
+      right: 176px;
+    }
+  }
+  .microphone__column,
+  .phone__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .conversation-menu__subtitle {
+      font-size: 18px;
+      line-height: 23px;
+      color: #ffffff;
+      opacity: 0.5;
+      display: flex;
+      justify-content: space-between;
+      margin: 31px 0 51px 0;
+    }
+    .conversation-menu__subtitle-microphone::after {
+      content: "Микрофон выключен";
+      font-size: 18px;
+      line-height: 23px;
+      color: #ffffff;
+      opacity: 0.5;
+      position: absolute;
+      width: 100%;
+      visibility: hidden;
+    }
+  }
+  .menu__btn-microphone,
+  .btn__red {
+    min-width: 140px;
+    width: 140px;
+    height: 140px;
+  }
+  .btn__red {
+    background-color: red;
+    &:hover {
+      background-color: lighten(red, 20%);
+      transition: 0.3s;
+    }
+  }
+}
+
+.screen-nav.conversation-nav-screen-nav {
+  margin: 0;
+}

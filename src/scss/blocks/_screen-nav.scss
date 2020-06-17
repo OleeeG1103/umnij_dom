@@ -6,6 +6,9 @@
   width: 200px;
   margin-right: 48px;
 
+  .camera.camera__lg {
+    width: 197px;
+  }
   .camera {
     width: 176px;
     height: 207px;
@@ -42,9 +45,6 @@
       background: #ffffff;
       font-size: 18px;
       line-height: 23px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       color: #4d4b6c;
       cursor: pointer;
       border: none;
@@ -96,6 +96,9 @@
       .btn__icon {
         margin: 0 17px 0 17px;
       }
+    }
+    .btn__screen-lg {
+      width: 196px;
     }
   }
 }
