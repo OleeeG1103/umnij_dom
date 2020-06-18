@@ -1,10 +1,8 @@
-<% var data = {
-    title: "Второй заголовок | Проект",
-    author: "Oleg Bukreev"
-  }; %>
-  <%= _.template(require('./../includes/header.html').default)(data) %>
-  
-  <!-- блоки основной части контента -->
-  <%= _.template(require('./../includes/_disconnect-from-video.html.default)(data) %>
-  
-  <%= _.template(require('./../includes/footer.html').default)(data) %>
+<div class="disconnect">
+    <span class="disconnect__heading">Отключиться от видеоконференции?</span>
+
+    <div class="disconnect__btn">
+        <button class="brn btn__primery btn__lg"></button>
+        <button class="brn btn__secondary btn__lg"></button>
+    </div>
+</div>
