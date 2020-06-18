@@ -16,7 +16,7 @@ $font-stack: "Arial", "Helvetica", sans-serif;
 @import "./blocks/meeting-room";
 @import "./blocks/screen-nav";
 @import "./blocks/conversation-nav";
-@import "./blocks/disconnect";
+@import "./blocks/section";
 @import "./blocks/channels";
 @import "./blocks/footer";
 @import "./blocks/some-block";
@@ -45,6 +45,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  color: #ffffff;
 }
 
 svg.icon {
