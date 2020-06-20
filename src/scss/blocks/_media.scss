@@ -194,6 +194,18 @@
       }
     }
   }
+  .section.pin-code {
+    padding-bottom: 80px;
+  }
+.number-input.pin-code__number-input {
+  width: 224px;
+  height: 304px;
+  .btn__circle {
+    min-width: 64px;
+    width: 64px;
+    height: 64px;
+  }
+}
   .audio-input,
   .audio-output {
     width: 40% !important;

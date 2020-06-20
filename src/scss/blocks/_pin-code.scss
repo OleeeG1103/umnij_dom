@@ -1,2 +1,15 @@
+.pin-code {
+  flex: 1 0 auto;
 
-  
+  .section__title {
+    margin: 0;
+  }
+  .section__item-password {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 16px 0 32px 0;
+  }
+  .btn__circle {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+}
