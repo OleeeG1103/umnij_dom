@@ -4,14 +4,20 @@ header {
   padding: 26px 66px 0 45px;
   flex: 0 0 auto;
   position: relative;
+  z-index: 1;
 
   .date,
+  .mobile-date,
   .bkc__text {
     font-size: 18px;
     line-height: 23px;
     color: #ffffff;
     mix-blend-mode: normal;
     opacity: 0.5;
+  }
+
+  .mobile-date {
+  display: none;
   }
 
   .bkc {
@@ -35,6 +41,4 @@ header {
       } 
     
   }
-
-  
 }

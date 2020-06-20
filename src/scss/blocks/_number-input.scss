@@ -25,7 +25,11 @@
     height: 75px;
   }
 
-  .btn__circle.disabled {
+  .number-input__item-disabled {
     visibility: hidden;
+  }
+
+  .mobile-number-input__item {
+    display: none;
   }
 }

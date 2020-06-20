@@ -31,6 +31,7 @@
         width: 107.46;
         height: 107.46;
         border: 2px solid rgba(239, 239, 239, 0.1);
+        margin: 0 10px 0 10px;
         &.btn__red {
           background-color: red;
           &:hover {
@@ -38,10 +39,7 @@
             transition: 0.3s;
           }
         }
-        &.btn__secondary.btn__circle.btn__active {
-          margin: 0 20.54px 0 20.54px;
-        }
-
+        
         &.btn__circle.call-nav__menu-btn {
           min-width: 107.5px;
           width: 107.5px;
