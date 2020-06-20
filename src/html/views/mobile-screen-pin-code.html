@@ -1,0 +1,9 @@
+<% var data = {
+    title: "Пин-код | Проект",
+    author: "Oleg Bukreev"
+  }; %>
+  <%= _.template(require('./../includes/mobile-pin-code.html').default)(data) %>
+  
+  <!-- блоки основной части контента -->
+  <%= _.template(require('./../includes/open-panel.html').default)(data) %>
+  
