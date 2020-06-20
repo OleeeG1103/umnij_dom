@@ -90,7 +90,7 @@ const config = {
       {
         test: /\.svg$/,
         include: [
-          path.resolve(__dirname, "src/img/channel"),
+          // path.resolve(__dirname, "src/img/channel"),
           path.resolve(__dirname, "src/img/icon"),
         ],
         use: [
@@ -99,17 +99,20 @@ const config = {
             options: {
               extract: true,
               outputPath: "/img/sprites/",
-              spriteFilename: svgPath => svgPath.includes("src/img/channel") ? "sprite-channels.svg" : "sprite-icons.svg",
+              // spriteFilename: svgPath => svgPath.includes("src/img/channel") ? "sprite-channels.svg" : "sprite-icons.svg",
+              spriteFilename: "sprite-icons.svg",
               runtimeCompat: true
             },
+          },
+          {
+            loader: "svgo-loader"
           },
         ],
       },
       {
         test: /\.(png|jpg|svg|gif)$/,
         exclude: [
-          path.resolve(__dirname, "src/img/icon"),
-          path.resolve(__dirname, "src/img/channel")
+          path.resolve(__dirname, "src/img/icon")
         ],
         use: [
           {
