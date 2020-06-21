@@ -51,18 +51,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  &.section-instruction-screen {
-    visibility: hidden;
-  }
   &.section-instruction-tv {
-    visibility: hidden;
+    display: none;
   }
   &.section-instruction-setings-BKC {
-    visibility: hidden;
+    display: none;
   }
   &.section-instruction-BKC {
-    visibility: hidden;
+    display: none;
   }
   .section__list {
     ol {
