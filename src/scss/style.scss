@@ -7,6 +7,7 @@ $font-stack: "Arial", "Helvetica", sans-serif;
 // подключаем все необходимые блоки
 @import "./blocks/wrapper";
 @import "./blocks/header";
+@import "./blocks/flex-center";
 @import "./blocks/open-panel";
 @import "./blocks/demonstration-tv";
 @import "./blocks/number-nav";
