@@ -38,6 +38,20 @@
       display: none;
     }
   }
+
+  .btn.btn__primary.btn__lg,
+  .btn.btn__secondary.btn__lg {
+    width: 90%;
+    max-width: 343px;
+    height: 64px;
+  }
+  .btn.btn__primary.btn__circle,
+  .btn.btn__secondary.btn__circle {
+    width: 64px;
+    min-width: 64px;
+    height: 64px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
   .demonstration-tv {
     padding: 48px 24px 92px 24px;
     justify-content: space-between;
@@ -104,12 +118,7 @@
       width: 224px;
       height: 304px;
     }
-    .btn__circle {
-      width: 64px;
-      min-width: 64px;
-      height: 64px;
-      border: 2px solid rgba(255, 255, 255, 0.3);
-    }
+
     .speed-dial__item,
     .number__output,
     .btn__circle {
@@ -130,9 +139,9 @@
       justify-content: space-around;
     }
     .btn__circle {
-      width: 100px;
-      min-width: 100px;
-      height: 100px;
+      width: 100px !important;
+      min-width: 100px !important;
+      height: 100px !important;
     }
     .btn__block {
       width: 156px;
@@ -156,11 +165,7 @@
       font-size: 32px;
       line-height: 40px;
     }
-    .btn__lg {
-      width: 90%;
-      max-width: 343px;
-      height: 64px;
-    }
+
     .section__item {
       width: 100%;
       flex-direction: column;
@@ -197,15 +202,10 @@
   .section.pin-code {
     padding-bottom: 80px;
   }
-.number-input.pin-code__number-input {
-  width: 224px;
-  height: 304px;
-  .btn__circle {
-    min-width: 64px;
-    width: 64px;
-    height: 64px;
+  .number-input.pin-code__number-input {
+    width: 224px;
+    height: 304px;
   }
-}
   .audio-input,
   .audio-output {
     width: 40% !important;
@@ -215,11 +215,6 @@
     .audio__item-subtitle {
       font-size: 14px !important;
     }
-  }
-  .btn__frame {
-    width: 90%;
-    max-width: 343px;
-    height: 64px;
   }
 }
 

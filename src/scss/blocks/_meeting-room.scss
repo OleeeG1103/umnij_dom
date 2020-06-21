@@ -32,14 +32,7 @@
         height: 107.46;
         border: 2px solid rgba(239, 239, 239, 0.1);
         margin: 0 10px 0 10px;
-        &.btn__red {
-          background-color: red;
-          &:hover {
-            background-color: lighten(red, 20%);
-            transition: 0.3s;
-          }
-        }
-        
+
         &.btn__circle.call-nav__menu-btn {
           min-width: 107.5px;
           width: 107.5px;
@@ -49,6 +42,16 @@
         img {
           width: 40px;
           height: 40px;
+        }
+      }
+      .cll-nav__menu-btn-microphone {
+        position: relative;
+        .menu-btn-microphone,
+        .menu-btn-microphone-off {
+          position: absolute;
+        }
+        .menu-btn-microphone-off {
+          display: none;
         }
       }
     }

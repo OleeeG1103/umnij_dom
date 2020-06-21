@@ -46,13 +46,15 @@
     min-width: 140px;
     width: 140px;
     height: 140px;
+    position: relative;
   }
-  .btn__red {
-    background-color: red;
-    &:hover {
-      background-color: lighten(red, 20%);
-      transition: 0.3s;
-    }
+
+  .menu__btn-microphone-icon,
+  .menu__btn-microphone-icon-off {
+    position: absolute;
+  }
+  .menu__btn-microphone-icon-off {
+    display: none;
   }
 }
 

@@ -22,15 +22,14 @@
       position: relative;
       padding-bottom: 7.82px;
       &::before {
-          content: '';
-          position: absolute;
-          height: 100%;
-          left: 0;
-          right: 55%;
-          bottom: -1px; 
-          border-bottom: 3px solid #ffffff;
-
-        }
+        content: "";
+        position: absolute;
+        height: 100%;
+        left: 0;
+        right: 55%;
+        bottom: -1px;
+        border-bottom: 3px solid #ffffff;
+      }
     }
 
     .audio-output {
@@ -41,10 +40,10 @@
     .audio__item {
       margin-top: 32px;
       input.audio__item-input {
-          width: 100%;
-          max-width: 100%;
-          margin: 0 0 22px 0;
-        }
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 22px 0;
+      }
       &-subtitle {
         font-size: 16px;
         line-height: 28px;
@@ -53,4 +52,3 @@
     }
   }
 }
-

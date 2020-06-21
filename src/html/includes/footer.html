@@ -1,15 +1,22 @@
-
     <footer>
       <div class="sound-nav">
         
         <a class="sound-nav-min" href="#">
-          <img src="./img/icon/sound_min.svg" alt="min" />
+          <svg class="icon sound-nav-min__icon">
+          <use xlink:href="/img/sprites/sprite-icons.svg#sound_min"></use>
+          </svg>
+
+          <svg class="icon sound-nav-max__icon">
+          <use xlink:href="/img/sprites/sprite-icons.svg#sound_max"></use>
+          </svg>
           </a>
 
         <input type="range" min="0" max="100">
 
         <a class="sound-nav-max" href="#">
-          <img src="./img/icon/sound_max.svg" alt="max" />
+          <svg class="icon sound-nav-max__icon">
+          <use xlink:href="/img/sprites/sprite-icons.svg#sound_max"></use>
+          </svg>
           </a>
 
           <span class="sound-nav__text-frame">Общая громкость 90дБ</span>
@@ -20,10 +27,14 @@
 
         <div class="record">
             <a class="record__off" href="#">
-              <img src="./img/icon/record_off.svg" alt="off" />
+              <svg class="icon record__off-icon">
+                <use xlink:href="/img/sprites/sprite-icons.svg#record_off"></use>
+             </svg>
             </a>
             <a class="record__on" href="#">
-            <img  src="./img/icon/record_on.svg" alt="on" />
+            <svg class="icon record__on-icon">
+              <use xlink:href="/img/sprites/sprite-icons.svg#record_on"></use>
+            </svg>
             </a>
         </div>
 
@@ -32,11 +43,19 @@
         </div>
 
         <div class="question">
-          <a href="#"><img src="./img/icon/question.svg" alt="question" /></a>
+          <a href="#">
+            <svg class="icon question-icon">
+              <use xlink:href="/img/sprites/sprite-icons.svg#question"></use>
+            </svg>
+          </a>
         </div>
 
         <div class="power">
-          <a href="#"><img src="./img/icon/power.svg" alt="power" /></a>
+          <a href="#">
+            <svg class="icon power-icon">
+              <use xlink:href="/img/sprites/sprite-icons.svg#power"></use>
+            </svg>
+          </a>
         </div>
 
       </div>

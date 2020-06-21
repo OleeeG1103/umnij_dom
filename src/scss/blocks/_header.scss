@@ -17,7 +17,7 @@ header {
   }
 
   .mobile-date {
-  display: none;
+    display: none;
   }
 
   .bkc {
@@ -26,19 +26,20 @@ header {
     position: absolute;
     left: 45px;
     visibility: hidden;
-    & img {
+    &__icon {
+      width: 10px;
+      height: 10px;
       margin-right: 7.5px;
     }
   }
 
   .return {
-      position: absolute;
-      left: 45px;
-      visibility: hidden;
-      & img {
-        width: 31.34px;
-        height: 20.5px;
-      } 
-    
+    position: absolute;
+    left: 45px;
+    visibility: hidden;
+    &__icon {
+      width: 31.34px;
+      height: 20.5px;
+    }
   }
 }
