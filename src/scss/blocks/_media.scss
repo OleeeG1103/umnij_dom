@@ -1,3 +1,116 @@
+@media (min-width: 1200px) and (min-height: 100vh) {
+  .number-nav {
+    justify-content: center;
+    .speed-dial {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 900px) {
+  .number-nav {
+    align-items: center;
+  }
+}
+
+@media (max-width: 850px) and (max-height: 100vh) {
+  .meeting-room {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .classrooms {
+      margin: 0 0 48px 0;
+      .rooms {
+        display: none;
+      }
+      .speed-dial.classrooms-speed-dial {
+        display: none;
+      }
+      .number-input.classrooms__number-input {
+        display: flex;
+        margin: 0;
+        width: 224px;
+        height: 304px;
+
+        .btn__circle {
+          width: 64px;
+          min-width: 64px;
+          height: 64px;
+          border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .number-input__item-disabled {
+          display: none;
+        }
+
+        .mobile-number-input__item {
+          display: flex;
+        }
+      }
+    }
+
+    .call-nav__number {
+      width: 224px;
+      position: absolute;
+      bottom: 90%;
+    }
+
+    .btn.btn__circle.call-nav__menu-btn {
+      min-width: 64px !important;
+      width: 64px !important;
+      height: 64px !important;
+      margin: 0 8px 0 8px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .screen-nav {
+      margin: 0;
+      .camera {
+        display: none;
+      }
+      .screen {
+        .btn {
+          margin: 0;
+        }
+        &__subtitle {
+          display: none;
+        }
+      }
+    }
+  }
+  .number__output,
+  .btn {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .btn__block.mobile-btn-left,
+  .btn__block.mobile-btn-right {
+    min-width: 156px;
+    width: 156px;
+    height: 64px;
+    position: absolute;
+    bottom: 28px;
+  }
+
+  .btn__block.mobile-btn-left {
+    left: 25%;
+  }
+  .btn__block.mobile-btn-right {
+    right: 25%;
+  }
+
+  .microphone__column-btn-keyboard {
+    left: 50%;
+    top: -50px !important;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media (max-width: 768px) and (max-height: 700px) {
   .demonstration-tv {
     padding: 48px 24px 48px 24px;
@@ -228,18 +341,32 @@
   }
 }
 
-@media (min-width: 1200px) and (min-height: 100vh) {
-  .number-nav {
-    justify-content: center;
-    .speed-dial {
-      margin-left: 0;
-    }
+@media (max-width: 640px) and (max-height: 100vh) {
+  .btn__block.mobile-btn-left {
+    left: 16px;
+  }
+  .btn__block.mobile-btn-right {
+    right: 16px;
+  }
+
+  .channels-menu {
+    grid-template: repeat(8, 76px) / repeat(3, 106px);
+    gap: 10px;
   }
 }
 
-@media (min-width: 1200px) and (min-height: 900px) {
-  .number-nav {
-    align-items: center;
+@media (max-width: 640px) and (max-height: 700px) {
+  .classrooms {
+    margin: 0 0 15px 0 !important;
+  }
+
+  .btn__block.mobile-btn-left,
+  .btn__block.mobile-btn-right {
+    bottom: 15px;
+  }
+
+  .channels-menu {
+    grid-template: repeat(6, 76px) / repeat(3, 106px);
   }
 }
 
@@ -259,123 +386,5 @@
 @media (max-width: 500px) and (max-height: 700px) {
   .speed-dial {
     display: none;
-  }
-}
-
-@media (max-width: 850px) and (max-height: 100vh) {
-  .meeting-room {
-    padding: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    .classrooms {
-      margin: 0 0 48px 0;
-      .rooms {
-        display: none;
-      }
-      .speed-dial.classrooms-speed-dial {
-        display: none;
-      }
-      .number-input.classrooms__number-input {
-        display: flex;
-        margin: 0;
-        width: 224px;
-        height: 304px;
-
-        .btn__circle {
-          width: 64px;
-          min-width: 64px;
-          height: 64px;
-          border: 2px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .number-input__item-disabled {
-          display: none;
-        }
-
-        .mobile-number-input__item {
-          display: flex;
-        }
-      }
-    }
-
-    .call-nav__number {
-      width: 224px;
-      position: absolute;
-      bottom: 90%;
-    }
-
-    .btn.btn__circle.call-nav__menu-btn {
-      min-width: 64px !important;
-      width: 64px !important;
-      height: 64px !important;
-      margin: 0 8px 0 8px;
-      img {
-        width: 20px;
-        height: 20px;
-      }
-    }
-    .screen-nav {
-      margin: 0;
-      .camera {
-        display: none;
-      }
-      .screen {
-        .btn {
-          margin: 0;
-        }
-        &__subtitle {
-          display: none;
-        }
-      }
-    }
-  }
-  .number__output,
-  .btn {
-    font-size: 22px;
-    line-height: 26px;
-  }
-
-  .btn__block.mobile-btn-left,
-  .btn__block.mobile-btn-right {
-    min-width: 156px;
-    width: 156px;
-    height: 64px;
-    position: absolute;
-    bottom: 28px;
-  }
-
-  .btn__block.mobile-btn-left {
-    left: 25%;
-  }
-  .btn__block.mobile-btn-right {
-    right: 25%;
-  }
-
-  .microphone__column-btn-keyboard {
-    left: 50%;
-    top: -50px !important;
-    transform: translate(-50%, -50%);
-  }
-}
-
-@media (max-width: 640px) and (max-height: 100vh) {
-  .btn__block.mobile-btn-left {
-    left: 16px;
-  }
-  .btn__block.mobile-btn-right {
-    right: 16px;
-  }
-}
-
-@media (max-width: 640px) and (max-height: 700px) {
-  .classrooms {
-    margin: 0 0 15px 0 !important;
-  }
-
-  .btn__block.mobile-btn-left,
-  .btn__block.mobile-btn-right {
-    bottom: 15px;
   }
 }
