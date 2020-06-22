@@ -9,6 +9,8 @@ footer {
   background: #030021;
   mix-blend-mode: normal;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  bottom: 0;
 
   .sound-nav {
     display: flex;

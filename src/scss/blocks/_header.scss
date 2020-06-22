@@ -3,9 +3,10 @@ header {
   justify-content: flex-end;
   padding: 26px 66px 0 45px;
   flex: 0 0 auto;
-  position: relative;
   z-index: 1;
   grid-area: header;
+  position: sticky;
+  top: 0;
 
   .date,
   .mobile-date,

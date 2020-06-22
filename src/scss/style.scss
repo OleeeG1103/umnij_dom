@@ -5,10 +5,7 @@ $font-stack: "Arial", "Helvetica", sans-serif;
   box-sizing: border-box;
 }
 // подключаем все необходимые блоки
-@import "./blocks/wrapper";
 @import "./blocks/header";
-@import "./blocks/flex-center";
-@import "./blocks/open-panel";
 @import "./blocks/demonstration-tv";
 @import "./blocks/number-nav";
 @import "./blocks/speed-dial";
@@ -52,7 +49,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  overflow-x: hidden;
+  overflow: hidden;
   color: #ffffff;
   width: 100vw;
   margin: 0 auto;
@@ -68,6 +65,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
+  padding: 10px 0;
 }
 
 svg.icon {

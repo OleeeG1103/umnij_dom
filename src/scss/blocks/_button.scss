@@ -59,12 +59,6 @@
   line-height: 30px;
 }
 
-.btn__lg.btn__block {
-  width: auto;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
 .btn__square {
   min-width: 88px;
   width: 88px;
@@ -84,6 +78,12 @@
   box-shadow: none;
 }
 
+.btn__lg.btn__block {
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .btn__secondary.btn__lg,
 .btn__secondary.btn__square {
   border: 2px solid rgba(255, 255, 255, 0.1);
@@ -91,4 +91,5 @@
 
 .btn__secondary.btn__lg.btn__frame {
   border: 2px solid rgba(255, 255, 255, 0.3);
+  display: inline-grid;
 }
