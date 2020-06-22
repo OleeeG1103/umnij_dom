@@ -64,8 +64,16 @@ body {
 
 main {
   grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 svg.icon {
   fill: #ffffff;
+}
+
+.hidden {
+  visibility: hidden;
 }
