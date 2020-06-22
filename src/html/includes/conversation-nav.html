@@ -1,88 +1,75 @@
-<main class="conversation-nav flex-center">
-  <div class="conversation-menu">
-    <div class="microphone__column">
-      <button
-        class="btn btn__secondary btn__circle btn__active menu__btn-microphone"
-      >
+<main>
+  <div class="conversation-nav">
+    <div class="conversation-menu">
+      <div class="microphone__column">
+        <button class="btn btn__secondary btn__circle btn__active menu__btn-microphone">
+          <img
+            class="menu__btn-microphone-icon"
+            src="./img/icon/microphone.svg"
+            alt="microphone on"
+          />
+          <img
+            class="menu__btn-microphone-icon-off"
+            src="./img/icon/microphone_off.svg"
+            alt="microphone off"
+          />
+        </button>
+        <button class="btn btn__secondary btn__circle microphone__column-btn-keyboard">
+          <img src="./img/icon/set_2.svg" alt="keyboard" />
+        </button>
+        <span class="conversation-menu__subtitle conversation-menu__subtitle-microphone">Микрофон включен</span>
+        <button class="btn btn__secondary btn__block btn__active">Контент</button>
+      </div>
+
+      <div class="phone__column">
+        <button class="btn btn__red btn btn__circle">
+          <img src="./img/icon/phone_off.svg" alt="phone off" />
+        </button>
+        <span class="conversation-menu__subtitle">Завершить вызов</span>
+        <button class="btn btn__secondary btn__block">Контент</button>
+      </div>
+    </div>
+    <div class="screen-nav conversation-nav-screen-nav">
+      <div class="controller">
         <img
-          class="menu__btn-microphone-icon"
-          src="./img/icon/microphone.svg"
-          alt="microphone on"
+          class="controller__top"
+          src="./img/icon/top_right_bottom_left.svg"
+          alt="top"
         />
         <img
-          class="menu__btn-microphone-icon-off"
-          src="./img/icon/microphone_off.svg"
-          alt="microphone off"
+          class="controller__left"
+          src="./img/icon/top_right_bottom_left.svg"
+          alt="right"
         />
-      </button>
+        <button class="controller__btn">OK</button>
+        <img
+          class="controller__right"
+          src="./img/icon/top_right_bottom_left.svg"
+          alt="left"
+        />
+        <img
+          class="controller__bottom"
+          src="./img/icon/top_right_bottom_left.svg"
+          alt="bottom"
+        />
+      </div>
 
-      <button
-        class="btn btn__secondary btn__circle microphone__column-btn-keyboard"
-      >
-        <img src="./img/icon/set_2.svg" alt="keyboard" />
-      </button>
+      <div class="camera camera__lg">
+        <button class="btn btn__secondary btn__square">1</button>
+        <button class="btn btn__secondary btn__square">2</button>
+        <button class="btn btn__secondary btn__square btn__active">3</button>
+        <button class="btn btn__secondary btn__square">4</button>
+        <span class="camera__subtitle subtitle">Положение камеры</span>
+      </div>
 
-      <span
-        class="conversation-menu__subtitle conversation-menu__subtitle-microphone"
-        >Микрофон включен</span
-      >
-
-      <button class="btn btn__secondary btn__block btn__active">Контент</button>
-    </div>
-
-    <div class="phone__column">
-      <button class="btn btn__red btn btn__circle">
-        <img src="./img/icon/phone_off.svg" alt="phone off" />
-      </button>
-
-      <span class="conversation-menu__subtitle">Завершить вызов</span>
-      <button class="btn btn__secondary btn__block">Контент</button>
-    </div>
-  </div>
-  <div class="screen-nav conversation-nav-screen-nav">
-    <div class="controller">
-      <img
-        class="controller__top"
-        src="./img/icon/top_right_bottom_left.svg"
-        alt="top"
-      />
-
-      <img
-        class="controller__left"
-        src="./img/icon/top_right_bottom_left.svg"
-        alt="right"
-      />
-      <button class="controller__btn">OK</button>
-      <img
-        class="controller__right"
-        src="./img/icon/top_right_bottom_left.svg"
-        alt="left"
-      />
-
-      <img
-        class="controller__bottom"
-        src="./img/icon/top_right_bottom_left.svg"
-        alt="bottom"
-      />
-    </div>
-
-    <div class="camera camera__lg">
-      <button class="btn btn__secondary btn__square">1</button>
-      <button class="btn btn__secondary btn__square">2</button>
-
-      <button class="btn btn__secondary btn__square btn__active">3</button>
-      <button class="btn btn__secondary btn__square">4</button>
-
-      <span class="camera__subtitle subtitle">Положение камеры</span>
-    </div>
-
-    <div class="screen">
-      <button class="btn btn__secondary btn__block btn__screen-lg">
-        <img src="./img/icon/prev.svg" alt="prev" />
-        <img class="btn__icon" src="./img/icon/view.svg" alt="view" />
-        <img src="./img/icon/next.svg" alt="next" />
-      </button>
-      <span class="screen__subtitle subtitle">Вид экрана</span>
+      <div class="screen">
+        <button class="btn btn__secondary btn__block btn__screen-lg">
+          <img src="./img/icon/prev.svg" alt="prev" />
+          <img class="btn__icon" src="./img/icon/view.svg" alt="view" />
+          <img src="./img/icon/next.svg" alt="next" />
+        </button>
+        <span class="screen__subtitle subtitle">Вид экрана</span>
+      </div>
     </div>
   </div>
 </main>
