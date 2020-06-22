@@ -41,7 +41,10 @@ $font-stack: "Arial", "Helvetica", sans-serif;
   src: url(../fonts/HelveticaRegular.ttf);
 }
 
-html, body { height: 100% }
+html,
+body {
+  height: 100%;
+}
 
 body {
   font-family: $font-stack;

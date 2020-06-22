@@ -1,6 +1,6 @@
 import jQuery from "jquery";
 
-jQuery(function() {
+jQuery(function () {
   // твой код
 });
 
@@ -9,4 +9,4 @@ function requireAll(r) {
   r.keys().forEach(r);
 }
 
-requireAll(require.context('../img/', true, /\.svg$/));
+requireAll(require.context("../img/", true, /\.svg$/));
