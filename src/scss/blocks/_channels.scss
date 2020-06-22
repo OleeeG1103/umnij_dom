@@ -1,20 +1,20 @@
 .channels-menu {
   display: grid;
-  grid-template: repeat(3, minmax(76px, 112px)) / repeat(
-      5,
-      minmax(106px, 158px)
-    );
-  gap: 15.82px;
+  grid-template: repeat(3, minmax(76px, 112px)) / repeat(5, minmax(106px, 158px));
+  grid-gap: 16px;
   align-content: center;
   justify-content: center;
   padding: 0 18px 0 18px;
+
   &__item {
     border: 2px solid rgba(255, 255, 255, 0.1) !important;
+
     img {
       max-width: 85%;
       max-height: 70%;
     }
   }
+
   .channels-menu__item-none {
     display: none;
   }
