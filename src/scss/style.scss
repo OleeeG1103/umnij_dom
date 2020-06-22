@@ -41,6 +41,8 @@ $font-stack: "Arial", "Helvetica", sans-serif;
   src: url(../fonts/HelveticaRegular.ttf);
 }
 
+html, body { height: 100% }
+
 body {
   font-family: $font-stack;
   background-image: url(../img/bg.png);
@@ -50,11 +52,10 @@ body {
   overflow-x: hidden;
   color: #ffffff;
   width: 100vw;
-  height: 100vh;
   margin: 0 auto;
   position: relative;
   display: grid;
-  grid-template-rows: 84px 1fr 84px;
+  grid-template-rows: 84px 1fr auto;
   grid-template-areas: "header" "main" "footer";
 }
 
