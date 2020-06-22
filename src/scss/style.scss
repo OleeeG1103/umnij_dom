@@ -43,14 +43,23 @@ $font-stack: "Arial", "Helvetica", sans-serif;
 
 body {
   font-family: $font-stack;
-  width: 100vw;
-  min-height: 100vh;
   background-image: url(../img/bg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   overflow-x: hidden;
   color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-rows: 84px 1fr 84px;
+  grid-template-areas: "header" "main" "footer";
+}
+
+main {
+  grid-area: main;
 }
 
 svg.icon {

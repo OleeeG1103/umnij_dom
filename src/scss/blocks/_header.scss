@@ -5,6 +5,7 @@ header {
   flex: 0 0 auto;
   position: relative;
   z-index: 1;
+  grid-area: header;
 
   .date,
   .mobile-date,
