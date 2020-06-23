@@ -39,3 +39,9 @@
   grid-gap: 16px;
   grid-template-columns: repeat(3, 64px);
 }
+
+@media all and (min-width: 768px) {
+  .numbers-panel {
+    grid-template-columns: repeat(3, 80px);
+  }
+}

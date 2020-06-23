@@ -1,7 +1,10 @@
 .meeting-room {
   display: flex;
   justify-content: space-between;
+  flex: 1 0 100%;
+  width: 100%;
   padding: 24px 0 22px 0;
+
   .classrooms {
     display: flex;
     flex-direction: column;
