@@ -6,16 +6,17 @@
   width: 200px;
   margin-right: 48px;
 
-  .camera.camera__lg {
-    width: 197px;
-  }
   .camera {
-    width: 176px;
-    height: 207px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 44px;
+  }
+
+  .camera__nav {
+    display: grid;
+    grid-gap: 16px 20px;
+    grid-template-columns: repeat(2, 88px);
 
     .btn__square-sm {
       min-width: 80px;
@@ -83,7 +84,8 @@
   }
 
   .camera__subtitle {
-    margin-bottom: -16px;
+    margin-top: 13px;
+    width: 100%;
   }
 
   .screen {

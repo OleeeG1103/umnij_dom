@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  flex: 1 0 auto;
 }
 
 .conversation-menu {
@@ -57,6 +59,6 @@
   }
 }
 
-.screen-nav.conversation-nav-screen-nav {
+.screen-nav.-conversation {
   margin: 0;
 }

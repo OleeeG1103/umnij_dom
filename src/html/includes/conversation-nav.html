@@ -29,7 +29,7 @@
         <button class="btn btn__secondary btn__block">Контент</button>
       </div>
     </div>
-    <div class="screen-nav conversation-nav-screen-nav">
+    <div class="screen-nav -conversation mb-0">
       <div class="controller">
         <img
           class="controller__top"
@@ -54,12 +54,14 @@
         />
       </div>
 
-      <div class="camera camera__lg">
-        <button class="btn btn__secondary btn__square">1</button>
-        <button class="btn btn__secondary btn__square">2</button>
-        <button class="btn btn__secondary btn__square btn__active">3</button>
-        <button class="btn btn__secondary btn__square">4</button>
-        <span class="camera__subtitle subtitle">Положение камеры</span>
+      <div class="camera">
+        <div class="camera__nav">
+          <button class="btn btn__secondary btn__square">1</button>
+          <button class="btn btn__secondary btn__square">2</button>
+          <button class="btn btn__secondary btn__square btn__active">3</button>
+          <button class="btn btn__secondary btn__square">4</button>
+        </div>
+        <div class="camera__subtitle subtitle text-center">Положение камеры</div>
       </div>
 
       <div class="screen">
@@ -68,7 +70,7 @@
           <img class="btn__icon" src="./img/icon/view.svg" alt="view" />
           <img src="./img/icon/next.svg" alt="next" />
         </button>
-        <span class="screen__subtitle subtitle">Вид экрана</span>
+        <div class="screen__subtitle subtitle text-center">Вид экрана</div>
       </div>
     </div>
   </div>
