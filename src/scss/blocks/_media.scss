@@ -25,6 +25,7 @@
 
     .classrooms {
       margin: 0 0 48px 0;
+
       .rooms {
         display: none;
       }
@@ -32,87 +33,95 @@
       .speed-dial.classrooms-speed-dial {
         display: none;
       }
+
       .numbers-panel.d-none {
-      position: static;
-    
-      .numbers-panel {
         position: static;
 
-        .btn__circle {
-          width: 64px;
-          min-width: 64px;
-          height: 64px;
-          border: 2px solid rgba(255, 255, 255, 0.3);
-        }
+        .numbers-panel {
+          position: static;
 
-        .mobile-number-input__item {
-          display: flex;
+          .btn__circle {
+            width: 64px;
+            min-width: 64px;
+            height: 64px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+          }
+
+          .mobile-number-input__item {
+            display: flex;
+          }
         }
       }
-    }
 
-    .call-nav__number {
-      width: 224px;
-      position: absolute;
-      bottom: 90%;
-    }
+      .call-nav__number {
+        width: 224px;
+        position: absolute;
+        bottom: 90%;
+      }
 
-    .btn.btn__circle.call-nav__menu-btn {
-      min-width: 80px !important;
-      width: 80px !important;
-      height: 80px !important;
-      margin: 0 8px 0 8px;
-      img {
-        width: 25px;
-        height: 25px;
-      }
-    }
-    .screen-nav {
-      margin: 0;
-      .camera {
-        display: none;
-      }
-      .screen {
-        .btn {
-          margin: 0;
+      .btn.btn__circle.call-nav__menu-btn {
+        min-width: 80px !important;
+        width: 80px !important;
+        height: 80px !important;
+        margin: 0 8px 0 8px;
+
+        img {
+          width: 25px;
+          height: 25px;
         }
-        &__subtitle {
+      }
+
+      .screen-nav {
+        margin: 0;
+
+        .camera {
           display: none;
         }
+
+        .screen {
+          .btn {
+            margin: 0;
+          }
+
+          &__subtitle {
+            display: none;
+          }
+        }
       }
     }
-  }
-  .number__output,
-  .btn {
-    font-size: 22px;
-    line-height: 26px;
-    opacity: 1;
-  }
 
-  .btn__block.mobile-btn-left,
-  .btn__block.mobile-btn-right {
-    min-width: 156px;
-    width: 156px;
-    height: 64px;
-    position: absolute;
-    bottom: 28px;
-  }
+    .number__output,
+    .btn {
+      font-size: 22px;
+      line-height: 26px;
+      opacity: 1;
+    }
 
-  .btn__block.mobile-btn-left {
-    left: 25%;
-  }
-  .btn__block.mobile-btn-right {
-    right: 25%;
-  }
+    .btn__block.mobile-btn-left,
+    .btn__block.mobile-btn-right {
+      min-width: 156px;
+      width: 156px;
+      height: 64px;
+      position: absolute;
+      bottom: 28px;
+    }
 
-  .btn.btn__primary.btn__circle,
-  .btn.btn__secondary.btn__circle {
-    width: 64px;
-    min-width: 64px;
-    height: 64px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    .btn__block.mobile-btn-left {
+      left: 25%;
+    }
+
+    .btn__block.mobile-btn-right {
+      right: 25%;
+    }
+
+    .btn.btn__primary.btn__circle,
+    .btn.btn__secondary.btn__circle {
+      width: 64px;
+      min-width: 64px;
+      height: 64px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
   }
-  
 }
 
 @media (max-width: 767px) and (max-height: 700px) {
@@ -247,10 +256,10 @@
       width: 100%;
       justify-content: space-around;
       .btn__circle {
-      width: 100px;
-      min-width: 100px;
-      height: 100px;
-    }
+        width: 100px;
+        min-width: 100px;
+        height: 100px;
+      }
     }
     
     .btn__block {
