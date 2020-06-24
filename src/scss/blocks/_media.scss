@@ -8,7 +8,6 @@
 @media (min-height: 800px)  {
   .speed-dial.classrooms-speed-dial {
     justify-content: center;
-    margin-bottom: 50px;
   }
   .screen-nav {
     justify-content: center;
@@ -25,14 +24,6 @@
 
     .classrooms {
       margin: 0 0 48px 0;
-
-      .rooms {
-        display: none;
-      }
-
-      .speed-dial.classrooms-speed-dial {
-        display: none;
-      }
 
       .numbers-panel.d-none {
         position: static;
@@ -104,14 +95,15 @@
       height: 64px;
       position: absolute;
       bottom: 28px;
+      margin: 0;
     }
 
     .btn__block.mobile-btn-left {
-      left: 25%;
+      left: 16px;
     }
 
     .btn__block.mobile-btn-right {
-      right: 25%;
+      right: 16px;
     }
 
     .btn.btn__primary.btn__circle,
@@ -422,9 +414,6 @@
 @media (max-width: 767px) and (max-height: 812px) {
   .meeting-room {
     justify-content: flex-start;
-    .call-nav__number {
-      display: none;
-    }
   }
 }
 

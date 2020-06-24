@@ -1,24 +1,36 @@
 .meeting-room {
   display: flex;
-  justify-content: space-around;
   flex: 1 0 100%;
   width: 100%;
-  padding: 24px 0 22px 0;
+  padding: 24px 54px 22px;
 
   .classrooms {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    .numbers-panel.d-none {
-      position: absolute;
+    justify-content: space-between;
+    flex: 1 0 auto;
+    max-width: 255px;
+    margin-bottom: 0;
+
+    @media all and (max-width: 767px) {
+      flex-direction: column-reverse;
     }
+
     .rooms {
       position: relative;
       height: 34px;
-      .rooms__number-input_exit {
+
+      @media all and (max-width: 767px) {
+        display: none;
+      }
+
+      .rooms__exit {
         position: absolute;
         left: 0;
-        visibility: hidden;
+
+        @media all and (max-width: 1023px) {
+          display: none;
+        }
       }
     }
   }
@@ -29,24 +41,42 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 5px 30px 8px;
+    flex-grow: 1;
+
+    @media all and (max-width: 412px) {
+      padding-bottom: 100px;
+    }
 
     .call-nav__menu {
       display: flex;
+
       .btn {
         border: 2px solid rgba(239, 239, 239, 0.1);
         margin: 0 10px 0 10px;
 
         &.btn__circle.call-nav__menu-btn {
-          min-width: 107.5px;
-          width: 107.5px;
-          height: 107.5px;
+          min-width: 108px;
+          width: 108px;
+          height: 108px;
+
+          @media all and (max-width: 767px) {
+            min-width: 64px;
+            width: 64px;
+            height: 64px;
+          }
         }
 
         img {
           width: 40px;
           height: 40px;
+
+          @media all and (max-width: 767px) {
+            width: 25px;
+            height: 25px;
+          }
         }
       }
+
       .cll-nav__menu-btn-microphone {
         position: relative;
         .menu-btn-microphone,
@@ -57,6 +87,17 @@
           display: none;
         }
       }
+    }
+  }
+
+  .screen-nav {
+    flex: 1 0 auto;
+    max-width: 200px;
+    justify-content: space-between;
+
+    @media all and (max-width: 412px) {
+      max-width: none;
+      width: 100%;
     }
   }
 
