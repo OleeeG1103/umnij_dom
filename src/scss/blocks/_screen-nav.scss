@@ -18,7 +18,7 @@
     grid-template-columns: repeat(2, 88px);
     margin: 0 auto;
 
-    @media all and (max-width: 412px) {
+    @media all and (max-width: 414px) {
       grid-template-columns: repeat(2, 80px);
     }
 
@@ -41,7 +41,6 @@
     align-items: center;
     position: relative;
     margin-bottom: 53px;
-    display: none;
 
     &__btn {
       width: 78px;
