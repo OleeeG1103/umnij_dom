@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   btns.forEach(btn => {
     btn.addEventListener("touchstart", event => btn.classList.add("btn--pressed"));
-    btn.addEventListener("touchend touchcancel", event => btn.classList.remove("btn--pressed"));
+    btn.addEventListener("touchmove", event => btn.classList.contains("btn--pressed") && btn.classList.remove("btn--pressed"));
+    btn.addEventListener("touchend", event => btn.classList.contains("btn--pressed") && btn.classList.remove("btn--pressed"));
+    btn.addEventListener("touchcancel", event => btn.classList.contains("btn--pressed") && btn.classList.remove("btn--pressed"));
   })
 });
 
