@@ -1,15 +1,6 @@
 @media (min-width: 1200px) and (min-height: 100vh) {
   .number-nav {
     justify-content: center;
-    .speed-dial {
-      margin-left: 0;
-    }
-  }
-}
-
-@media (min-width: 1200px) and (min-height: 900px) {
-  .number-nav {
-    align-items: center;
   }
 }
 
@@ -111,19 +102,19 @@
   
 }
 
-@media (max-width: 768px) and (max-height: 700px) {
+@media (max-width: 767px) and (max-height: 700px) {
   .demonstration-tv {
     padding: 48px 24px 48px 24px;
   }
 }
 
-@media (max-width: 768px) and (max-height: 640px) {
+@media (max-width: 767px) and (max-height: 640px) {
   .demonstration-tv {
     padding: 10px;
   }
 }
 
-@media (max-width: 768px) and (max-height: 100vh) {
+@media (max-width: 767px) and (max-height: 100vh) {
   header {
     .date {
       display: none;
@@ -336,7 +327,7 @@
   }
 }
 
-@media (max-width: 768px) and (max-height: 650px) {
+@media (max-width: 767px) and (max-height: 650px) {
   .conversation-nav {
     align-items: flex-start;
     padding-top: 40px;
@@ -378,7 +369,6 @@
 @media (max-width: 500px) and (max-height: 100vh) {
   .number-nav {
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
     .speed-dial {
         margin: 0;
@@ -390,13 +380,20 @@
 }
 
 @media (max-width: 500px) and (max-height: 700px) {
-  .speed-dial {
-    display: none;
-  }
   .meeting-room {
     justify-content: flex-start;
     .call-nav__number {
-    display: none;
+      display: none;
+    }
   }
+}
+
+@media (max-width: 1023px) {
+  .number-nav {
+    margin-left: 0;
+  }
+
+  .speed-dial {
+    display: none;
   }
 }
