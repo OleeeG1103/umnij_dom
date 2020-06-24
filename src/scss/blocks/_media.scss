@@ -13,6 +13,16 @@
   }
 }
 
+@media (min-height: 800px)  {
+  .speed-dial.classrooms-speed-dial {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .screen-nav {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 850px) and (max-height: 100vh) {
   .meeting-room {
     padding: 0;
@@ -29,21 +39,15 @@
       .speed-dial.classrooms-speed-dial {
         display: none;
       }
-      .number-input.classrooms__number-input {
-        display: flex;
-        margin: 0;
-        width: 224px;
-        height: 304px;
+      .numbers-panel.d-none {
+      position: static;
+    
 
         .btn__circle {
           width: 64px;
           min-width: 64px;
           height: 64px;
           border: 2px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .number-input__item-disabled {
-          display: none;
         }
 
         .mobile-number-input__item {
@@ -104,12 +108,7 @@
   .btn__block.mobile-btn-right {
     right: 25%;
   }
-
-  .microphone__column-btn-keyboard {
-    left: 50%;
-    top: -50px !important;
-    transform: translate(-50%, -50%);
-  }
+  
 }
 
 @media (max-width: 768px) and (max-height: 700px) {
@@ -250,12 +249,13 @@
     .conversation-menu {
       width: 100%;
       justify-content: space-around;
+      .btn__circle {
+      width: 100px;
+      min-width: 100px;
+      height: 100px;
     }
-    .btn__circle {
-      width: 100px !important;
-      min-width: 100px !important;
-      height: 100px !important;
     }
+    
     .btn__block {
       width: 156px;
       min-width: auto;
@@ -266,9 +266,14 @@
       margin: 0;
       .microphone__column-btn-keyboard {
         left: 50%;
+        bottom: 0;
         top: auto;
-        bottom: -20px;
         transform: translate(-50%, -50%);
+      }
+      .btn__circle.microphone__column-btn-keyboard {
+        min-width: 64px;
+        width: 64px;
+        height: 64px;
       }
     }
   }
@@ -387,5 +392,11 @@
 @media (max-width: 500px) and (max-height: 700px) {
   .speed-dial {
     display: none;
+  }
+  .meeting-room {
+    justify-content: flex-start;
+    .call-nav__number {
+    display: none;
+  }
   }
 }

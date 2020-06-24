@@ -1,6 +1,6 @@
 .meeting-room {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex: 1 0 100%;
   width: 100%;
   padding: 24px 0 22px 0;
@@ -8,7 +8,10 @@
   .classrooms {
     display: flex;
     flex-direction: column;
-    margin-left: 54px;
+    justify-content: center;
+    .numbers-panel.d-none {
+      position: absolute;
+    }
     .rooms {
       position: relative;
       height: 34px;

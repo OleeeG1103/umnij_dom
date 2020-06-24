@@ -8,13 +8,14 @@
 
 .conversation-menu {
   display: flex;
+  padding-bottom: 25px;
   .microphone__column {
     margin-right: 36px;
     position: relative;
     .microphone__column-btn-keyboard {
       position: absolute;
       top: 60px;
-      right: 176px;
+      right: 160px;
     }
   }
   .microphone__column,
