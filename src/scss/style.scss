@@ -108,7 +108,7 @@ svg.icon {
   display: none !important;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 1024px) {
   .hidden-md {
     visibility: hidden;
   }
@@ -118,7 +118,7 @@ svg.icon {
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1023px) {
   .hidden-sm {
     visibility: hidden;
   }

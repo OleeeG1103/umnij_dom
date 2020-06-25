@@ -86,7 +86,7 @@
           width: 108px;
           height: 108px;
 
-          @media all and (max-width: 767px) {
+          @media all and (max-width: 1023px) {
             min-width: 64px;
             width: 64px;
             height: 64px;
@@ -97,7 +97,7 @@
           width: 40px;
           height: 40px;
 
-          @media all and (max-width: 767px) {
+          @media all and (max-width: 1023px) {
             width: 25px;
             height: 25px;
           }

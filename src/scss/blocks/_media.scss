@@ -14,7 +14,7 @@
   }
 }
 
-@media (max-width: 850px) and (max-height: 100vh) {
+@media (max-width: 1023px) {
   .meeting-room {
     padding: 0;
     flex-direction: column;
@@ -24,25 +24,6 @@
 
     .classrooms {
       margin: 0 0 48px 0;
-
-      .numbers-panel.d-none {
-        position: static;
-
-        .numbers-panel {
-          position: static;
-
-          .btn__circle {
-            width: 64px;
-            min-width: 64px;
-            height: 64px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-          }
-
-          .mobile-number-input__item {
-            display: flex;
-          }
-        }
-      }
 
       .call-nav__number {
         width: 224px;
@@ -116,7 +97,7 @@
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 640px) {
   .meeting-room .btn__block.mobile-btn-left {
     left: 16px;
   }

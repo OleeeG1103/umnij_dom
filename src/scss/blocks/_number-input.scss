@@ -40,11 +40,16 @@
   grid-template-columns: repeat(3, 80px);
   .btn__circle {
     border: 2px solid rgba(255, 255, 255, 0.1);
-    }
+  }
 }
 
 @media all and (max-width: 850px) {
   .numbers-panel {
     grid-template-columns: repeat(3, 64px);
+    .btn__circle {
+      min-width: 64px;
+      width: 64px;
+      height: 64px;
+    }
   }
 }
