@@ -50,6 +50,15 @@
       min-width: 64px;
       width: 64px;
       height: 64px;
+      font-size: 22px;
+      line-height: 26px;
+      border: 2px solid hsla(0,0%,100%,.3);
     }
   }
+  .speed-dial__item,
+    .number__output,
+    .btn__circle {
+      font-size: 22px;
+      line-height: 26px;
+    }
 }
