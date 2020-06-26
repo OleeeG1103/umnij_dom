@@ -25,12 +25,6 @@
     .classrooms {
       margin: 0 0 48px 0;
 
-      .call-nav__number {
-        width: 224px;
-        position: absolute;
-        bottom: 90%;
-      }
-
       .btn.btn__circle.call-nav__menu-btn {
         min-width: 80px !important;
         width: 80px !important;
@@ -74,17 +68,7 @@
       min-width: 156px;
       width: 156px;
       height: 64px;
-      position: absolute;
-      bottom: 28px;
-      margin: 0;
-    }
-
-    .btn__block.mobile-btn-left {
-      left: 25%;
-    }
-
-    .btn__block.mobile-btn-right {
-      right: 25%;
+      margin: 0 8px;
     }
 
     .btn.btn__primary.btn__circle,
@@ -94,16 +78,6 @@
       height: 64px;
       border: 2px solid rgba(255, 255, 255, 0.3);
     }
-  }
-}
-
-@media (max-width: 640px) {
-  .meeting-room .btn__block.mobile-btn-left {
-    left: 16px;
-  }
-
-  .meeting-room .btn__block.mobile-btn-right {
-    right: 16px;
   }
 }
 
@@ -340,10 +314,6 @@
     margin-bottom: 130px;
   }
 
-  .meeting-room .call-nav .call-nav__menu {
-    padding-bottom: 100px;
-  }
-
   .frame + .btn__frame {
     margin: 0 auto;
     display: block !important;
@@ -361,13 +331,6 @@
 }
 
 @media (max-width: 640px) and (max-height: 100vh) {
-  .btn__block.mobile-btn-left {
-    left: 16px;
-  }
-  .btn__block.mobile-btn-right {
-    right: 16px;
-  }
-
   .channels-menu {
     grid-template: repeat(8, 76px) / repeat(3, 106px);
     gap: 10px;
@@ -377,11 +340,6 @@
 @media (max-width: 640px) and (max-height: 700px) {
   .classrooms {
     margin: 0 0 15px 0 !important;
-  }
-
-  .btn__block.mobile-btn-left,
-  .btn__block.mobile-btn-right {
-    bottom: 15px;
   }
 
   .channels-menu {
