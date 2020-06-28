@@ -3,12 +3,6 @@
   flex: 1 0 100%;
   width: 100%;
   padding: 24px 54px 22px;
-  min-height: 600px;
-
-  @media all and (max-width: 375px) {
-    // hack for real mobile devices with top browsers search bar
-    margin-top: 180px;
-  }
 
   .classrooms {
     display: flex;
@@ -17,6 +11,11 @@
     flex: 1 0 auto;
     max-width: 255px;
     margin-bottom: 0;
+
+    @media all and (max-width: 414px) {
+        margin: 0 !important;
+        flex-grow: 0;
+      }
 
     .rooms {
       position: relative;
@@ -91,7 +90,7 @@
 
       .btn {
         border: 2px solid rgba(239, 239, 239, 0.1);
-        margin: 0 10px 0 10px;
+        margin: 0 8px;
 
         &.btn__circle.call-nav__menu-btn {
           min-width: 108px;
@@ -143,6 +142,11 @@
   .meeting-room__btns {
     display: flex;
     margin-top: 32px;
+    .btn {
+      .btn__icon {
+        margin: 0 17px;
+      }
+    }
 
     @media all and (max-width: 414px) {
       margin-top: 16px;
@@ -152,4 +156,13 @@
   .btn {
     border: 2px solid rgba(239, 239, 239, 0.1);
   }
+
+  @media all and (max-width: 1023px) {
+  .btn__circle-mobile.d-none {
+    display: flex !important;
+  }
+  .btn-order-1 {
+    order: 1;
+  }
+}
 }

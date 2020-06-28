@@ -85,7 +85,28 @@
   .demonstration-tv {
     padding: 48px 24px 48px 24px;
   }
+  .meeting-room {
+    min-height: auto;
+    justify-content: flex-start !important;
+    .call-nav__mobile {
+      margin: 0;
+    }
+    .numbers-panel {
+      column-gap: 16px;
+      row-gap: 8px;
+    }
+    .call-nav {
+      padding-bottom: 0;
+      .call-nav__menu {
+        margin: 8px 0;
+      }
+      .meeting-room__btns {
+        margin: 0;
+      }
+    }
+  }
 }
+
 
 @media (max-width: 767px) and (max-height: 640px) {
   .demonstration-tv {
@@ -357,7 +378,8 @@
 
 @media (max-width: 767px) and (max-height: 812px) {
   .meeting-room {
-    justify-content: flex-start;
+    justify-content: center;
+    flex: auto;
   }
 }
 

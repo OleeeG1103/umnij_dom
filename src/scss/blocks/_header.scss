@@ -45,3 +45,10 @@ header {
     }
   }
 }
+
+@media all and (max-width: 767px) {
+  header {
+    padding-top: 17px;
+    padding-bottom: 8px;
+  }
+}
