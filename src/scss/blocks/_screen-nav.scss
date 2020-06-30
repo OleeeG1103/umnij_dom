@@ -54,7 +54,7 @@
       border: none;
       outline: none;
     }
-    img {
+    svg {
       width: 20px;
       height: 10px;
     }
@@ -98,9 +98,15 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 8px;
-      .btn__icon {
-        margin: 0 17px 0 17px;
-      }
+      .prev, .next {
+      width: 10px;
+      height: 16px;
+    }
+    .view {
+      width: 35px;
+      height: 35px;
+      margin: 0 17px;
+    }
     }
     .btn__screen-lg {
       width: 196px;

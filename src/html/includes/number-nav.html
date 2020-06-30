@@ -11,9 +11,11 @@
     <div class="number-panel">
       <div class="number">
         <div class="number__output">192168254254</div>
-        <a href="#" class="number__clear">
-          <img src="./img/icon/reset.svg" alt="reset" />
-        </a>
+        <button class="number__clear">
+          <svg class="icon number__clear-icon">
+          <use xlink:href="./img/sprites/sprite-icons.svg#reset"></use>
+        </svg>
+        </button>
       </div>
       <div class="numbers-panel">
         <button class="btn btn__secondary btn__circle">1</button>
@@ -28,7 +30,9 @@
         <button class="btn btn__secondary btn__circle">0</button>
         <button class="btn btn__secondary btn__circle">#</button>
         <button class="btn btn__primary btn__circle">
-          <img src="./img/icon/phone.svg" alt="phone" />
+          <svg class="icon call-icon">
+          <use xlink:href="./img/sprites/sprite-icons.svg#phone"></use>
+        </svg>
         </button>
       </div>
     </div>

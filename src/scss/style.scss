@@ -4,6 +4,14 @@ $font-stack: "Arial", "Helvetica", sans-serif;
   padding: 0;
   box-sizing: border-box;
 }
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
 // подключаем все необходимые блоки
 @import "./blocks/header";
 @import "./blocks/demonstration-tv";

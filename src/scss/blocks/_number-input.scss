@@ -39,7 +39,11 @@
   grid-gap: 16px;
   grid-template-columns: repeat(3, 80px);
   .btn__circle {
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1); 
+    .call-icon {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 
@@ -52,7 +56,11 @@
       height: 64px;
       font-size: 22px;
       line-height: 26px;
-      border: 2px solid hsla(0,0%,100%,.3);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      .call-icon {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
   .speed-dial__item,

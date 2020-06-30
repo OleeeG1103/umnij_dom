@@ -20,8 +20,8 @@ footer {
 
     .sound-nav-min,
     .sound-nav-max {
-      width: 31px;
-      height: 27.5px;
+      min-width: 31px;
+      min-height: 27.5px;
       position: relative;
     }
 
@@ -36,6 +36,9 @@ footer {
       width: 31px;
       height: 27.5px;
       position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     .sound-nav__text-frame {
@@ -53,12 +56,12 @@ footer {
       margin-right: 8px;
       width: 35px;
       height: 35px;
+      position: relative;
       .record__off,
       .record__on {
-        position: relative;
+        position: absolute;
         .record__off-icon,
         .record__on-icon {
-          position: absolute;
           width: 35px;
           height: 35px;
         }

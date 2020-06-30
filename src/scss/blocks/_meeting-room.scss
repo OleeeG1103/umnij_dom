@@ -2,7 +2,7 @@
   display: flex;
   flex: 1 0 100%;
   width: 100%;
-  padding: 24px 54px 22px;
+  padding: 24px 54px 22px; 
 
   .classrooms {
     display: flex;
@@ -28,6 +28,10 @@
       .rooms__exit {
         position: absolute;
         left: 0;
+        &-icon {
+          width: 33px;
+          height: 24px;
+        }
 
         @media all and (max-width: 1023px) {
           display: none;
@@ -110,7 +114,7 @@
           }
         }
 
-        img {
+        svg {
           width: 40px;
           height: 40px;
 
@@ -148,14 +152,22 @@
   .meeting-room__btns {
     display: flex;
     margin-top: 32px;
-    .btn {
-      .btn__icon {
-        margin: 0 17px;
-      }
-    }
+    
 
     @media all and (max-width: 414px) {
       margin-top: 16px;
+    }
+  }
+
+  .mobile-btn-right {
+    .prev, .next {
+      width: 10px;
+      height: 16px;
+    }
+    .view {
+      width: 35px;
+      height: 35px;
+      margin: 0 17px;
     }
   }
 

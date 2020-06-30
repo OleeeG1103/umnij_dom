@@ -3,19 +3,20 @@
     <div class="conversation-menu">
       <div class="microphone__column">
         <button class="btn btn__secondary btn__circle btn__active menu__btn-microphone">
-          <img
-            class="menu__btn-microphone-icon"
-            src="./img/icon/microphone.svg"
-            alt="microphone on"
-          />
-          <img
-            class="menu__btn-microphone-icon-off"
-            src="./img/icon/microphone_off.svg"
-            alt="microphone off"
-          />
+          
+            <svg class="icon menu__btn-microphone-icon">
+               <use xlink:href="./img/sprites/sprite-icons.svg#microphone"></use>
+            </svg>
+
+            <svg class="icon menu__btn-microphone-icon-off">
+               <use xlink:href="./img/sprites/sprite-icons.svg#microphone_off"></use>
+            </svg>
+          
         </button>
         <button class="btn btn__secondary btn__circle microphone__column-btn-keyboard">
-          <img src="./img/icon/set_2.svg" alt="keyboard" />
+          <svg class="icon">
+               <use xlink:href="./img/sprites/sprite-icons.svg#set_2"></use>
+            </svg>
         </button>
         <span class="conversation-menu__subtitle conversation-menu__subtitle-microphone">Микрофон включен</span>
         <button class="btn btn__secondary btn__block btn__active">Контент</button>
@@ -23,7 +24,9 @@
 
       <div class="phone__column">
         <button class="btn btn__red btn btn__circle">
-          <img src="./img/icon/phone_off.svg" alt="phone off" />
+          <svg class="icon">
+               <use xlink:href="./img/sprites/sprite-icons.svg#phone_off"></use>
+            </svg>
         </button>
         <span class="conversation-menu__subtitle">Завершить вызов</span>
         <button class="btn btn__secondary btn__block">Контент</button>
@@ -31,27 +34,23 @@
     </div>
     <div class="screen-nav -conversation mb-0 d-sm-none">
       <div class="controller d-none">
-        <img
-          class="controller__top"
-          src="./img/icon/top_right_bottom_left.svg"
-          alt="top"
-        />
-        <img
-          class="controller__left"
-          src="./img/icon/top_right_bottom_left.svg"
-          alt="right"
-        />
+        <svg class="icon controller__top">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
+
+        <svg class="icon controller__left">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
+
         <button class="controller__btn">OK</button>
-        <img
-          class="controller__right"
-          src="./img/icon/top_right_bottom_left.svg"
-          alt="left"
-        />
-        <img
-          class="controller__bottom"
-          src="./img/icon/top_right_bottom_left.svg"
-          alt="bottom"
-        />
+        
+        <svg class="icon controller__right">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
+
+        <svg class="icon controller__bottom">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
       </div>
 
       <div class="camera">
@@ -66,9 +65,17 @@
 
       <div class="screen">
         <button class="btn btn__secondary btn__block btn__screen-lg">
-          <img src="./img/icon/prev.svg" alt="prev" />
-          <img class="btn__icon" src="./img/icon/view.svg" alt="view" />
-          <img src="./img/icon/next.svg" alt="next" />
+          <svg class="icon prev">
+            <use xlink:href="./img/sprites/sprite-icons.svg#prev"></use>
+          </svg>
+
+          <svg class="icon view">
+            <use xlink:href="./img/sprites/sprite-icons.svg#view"></use>
+          </svg>
+
+          <svg class="icon next">
+            <use xlink:href="./img/sprites/sprite-icons.svg#next"></use>
+          </svg>
         </button>
         <div class="screen__subtitle subtitle text-center">Вид экрана</div>
       </div>

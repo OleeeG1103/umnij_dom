@@ -40,7 +40,7 @@
         bottom: 95px;
         left: -18px;
         align-items: center;
-        padding-bottom: 20px;
+        padding: 0 10px 20px;
         visibility: hidden;
       }
 
@@ -56,11 +56,20 @@
         &-right {
           justify-content: flex-start;
         }
+        &-icon {
+          width: 15px;
+          height: 15px;
+        }
       }
 
       .menu-tv__item {
-        &-arrow {
+        &-icon {
+          width: 20px;
           height: 33px;
+        }
+        &-icon-set {
+          width: 30px;
+          height: 31px;
         }
       }
       .menu__line {

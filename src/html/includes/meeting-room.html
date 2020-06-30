@@ -2,15 +2,19 @@
   <div class="meeting-room">
     <div class="classrooms">
       <div class="rooms">
-        <a class="rooms__exit" href="#">
-          <img src="./img/icon/exit.svg" alt="exit"/>
-        </a>
+        <button class="rooms__exit">
+          <svg class="icon rooms__exit-icon">
+               <use xlink:href="./img/sprites/sprite-icons.svg#exit"></use>
+            </svg>
+        </button>
       </div>
 
       <div class="speed-dial classrooms-speed-dial d-sm-none">
         <button class="btn btn__secondary btn__square btn__square-sm speed-dial__keyboard-open">
-          <img src="./img/icon/set.svg" alt="keyboard" />
-        </button>
+          <svg class="icon speed-dial__keyboard-open-icon">
+               <use xlink:href="./img/sprites/sprite-icons.svg#set"></use>
+            </svg>
+        </button> 
         <span class="speed-dial__heading classrooms__sped-dial-heading">Клавиатура</span>
         <div class="speed-dial__item classrooms-speed-dial__item-1">
           243345245
@@ -22,7 +26,9 @@
       <div class="call-nav__mobile">
         <div class="number__output">192168254254</div>
         <button type="button" class="number__clear">
-          <img src="./img/icon/reset.svg" alt="reset" />
+          <svg class="icon number__clear-icon">
+          <use xlink:href="./img/sprites/sprite-icons.svg#reset"></use>
+        </svg>
         </button>
       </div>
 
@@ -44,33 +50,36 @@
       </div>
     </div>
     <div class="call-nav">
-      <div class="call-nav__number number d-sm-none hidden-md">
+      <div class="call-nav__number number d-sm-none">
         <div class="call-nav__number-output number__output">192168254254</div>
-        <a href="#" class="cell-nav__number-clear number__clear">
-          <img src="./img/icon/reset.svg" alt="reset" />
-        </a>
+        <button class="cell-nav__number-clear number__clear">
+          <svg class="icon number__clear-icon">
+          <use xlink:href="./img/sprites/sprite-icons.svg#reset"></use>
+        </svg>
+        </button>
       </div>
 
       <div class="call-nav__menu">
         <button class="btn btn__primary btn btn__circle call-nav__menu-btn">
-          <img src="./img/icon/phone.svg" alt="phone" />
+          <svg class="icon ">
+          <use xlink:href="./img/sprites/sprite-icons.svg#phone"></use>
+        </svg>
         </button>
-        <button
-          class="btn btn__secondary btn__circle btn__active call-nav__menu-btn cll-nav__menu-btn-microphone"
-        >
-          <img
-            class="menu-btn-microphone"
-            src="./img/icon/microphone.svg"
-            alt="microphone on"
-          />
-          <img
-            class="menu-btn-microphone-off"
-            src="./img/icon/microphone_off.svg"
-            alt="microphone on"
-          />
+
+        <button class="btn btn__secondary btn__circle btn__active call-nav__menu-btn cll-nav__menu-btn-microphone">
+          <svg class="icon menu-btn-microphone">
+          <use xlink:href="./img/sprites/sprite-icons.svg#microphone"></use>
+        </svg>
+
+          <svg class="icon menu-btn-microphone-off">
+          <use xlink:href="./img/sprites/sprite-icons.svg#microphone_off"></use>
+        </svg>
         </button>
+
         <button class="btn btn__red btn btn__circle call-nav__menu-btn">
-          <img src="./img/icon/phone_off.svg" alt="phone off" />
+          <svg class="icon">
+          <use xlink:href="./img/sprites/sprite-icons.svg#phone_off"></use>
+        </svg>
         </button>
       </div>
 
@@ -79,37 +88,39 @@
           Контент
         </button>
         <button class="btn btn__secondary btn__block mobile-btn-right d-md-none">
-          <img src="./img/icon/prev.svg" alt="prev">
-          <img class="btn__icon" src="./img/icon/view.svg" alt="view">
-          <img src="./img/icon/next.svg" alt="next">
+          <svg class="icon prev">
+            <use xlink:href="./img/sprites/sprite-icons.svg#prev"></use>
+          </svg>
+
+          <svg class="icon view">
+            <use xlink:href="./img/sprites/sprite-icons.svg#view"></use>
+          </svg>
+
+          <svg class="icon next">
+            <use xlink:href="./img/sprites/sprite-icons.svg#next"></use>
+          </svg>
         </button>
       </div>
     </div>
     <div class="screen-nav d-sm-none">
       <div class="controller d-none">
-        <img
-          class="controller__top"
-          src="./img/icon/top_right_bottom_left.svg"
-          alt="top"
-        />
+        <svg class="icon controller__top">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
 
-        <img
-          class="controller__left"
-          src="./img/icon/top_right_bottom_left.svg"
-          alt="right"
-        />
+        <svg class="icon controller__left">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
+
         <button class="controller__btn">OK</button>
-        <img
-          class="controller__right"
-          src="./img/icon/top_right_bottom_left.svg"
-          alt="left"
-        />
+        
+        <svg class="icon controller__right">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
 
-        <img
-          class="controller__bottom"
-          src="./img/icon/top_right_bottom_left.svg"
-          alt="bottom"
-        />
+        <svg class="icon controller__bottom">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
       </div>
 
       <div class="camera d-sm-none">
@@ -124,9 +135,17 @@
 
       <div class="screen d-sm-none">
         <button class="btn btn__secondary btn__block mobile-btn-right">
-          <img src="./img/icon/prev.svg" alt="prev" />
-          <img class="btn__icon" src="./img/icon/view.svg" alt="view" />
-          <img src="./img/icon/next.svg" alt="next" />
+          <svg class="icon prev">
+            <use xlink:href="./img/sprites/sprite-icons.svg#prev"></use>
+          </svg>
+
+          <svg class="icon view">
+            <use xlink:href="./img/sprites/sprite-icons.svg#view"></use>
+          </svg>
+
+          <svg class="icon next">
+            <use xlink:href="./img/sprites/sprite-icons.svg#next"></use>
+          </svg>
         </button>
         <div class="screen__subtitle subtitle text-center d-sm-none">Вид экрана</div>
       </div>

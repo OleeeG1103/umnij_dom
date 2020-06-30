@@ -14,8 +14,9 @@
   &__clear {
     width: 41px;
     height: 28px;
-    & img {
-      width: 100%;
+    &-icon {
+      width: 41px;
+    height: 28px;
     }
   }
 }
