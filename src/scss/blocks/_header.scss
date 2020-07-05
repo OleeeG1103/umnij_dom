@@ -38,7 +38,8 @@ header {
   .return {
     position: absolute;
     left: 45px;
-    visibility: hidden;
+    display: none;
+
     &__icon {
       width: 31.34px;
       height: 20.5px;

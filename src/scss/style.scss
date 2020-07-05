@@ -120,6 +120,10 @@ img {
   display: none !important;
 }
 
+.d-block {
+  display: block !important;
+}
+
 @media all and (min-width: 1024px) {
   .hidden-md {
     visibility: hidden;

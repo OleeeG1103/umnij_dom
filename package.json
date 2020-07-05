@@ -10,7 +10,6 @@
     "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
   },
   "dependencies": {
-    "jquery": "^3.5.1",
     "svgo-loader": "^2.2.1"
   },
   "devDependencies": {

@@ -19,6 +19,7 @@
 
     .tv-nav__item {
       position: relative;
+
       .menu-bkc,
       .menu-tv {
         position: absolute;
@@ -30,18 +31,25 @@
       .menu-bkc {
         width: 238px;
         height: 106px;
-        bottom: 95px;
-        left: -10px;
-        padding-top: 12.28px;
+        bottom: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 12px;
+      }
+      .tooltip {
+        display: none;
+      }
+      .btn.btn__active ~ .tooltip {
+        display: flex;
       }
       .menu-tv {
         width: 254px;
         height: 106px;
-        bottom: 95px;
-        left: -18px;
         align-items: center;
         padding: 0 10px 20px;
-        visibility: hidden;
+        bottom: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
       }
 
       .menu-bkc__item {
@@ -59,6 +67,9 @@
         &-icon {
           width: 15px;
           height: 15px;
+        }
+        &.active {
+          border-color: #00A523;
         }
       }
 
