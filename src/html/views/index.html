@@ -27,24 +27,22 @@
           </button>
         </div>
       </div>
-
       <div class="tv-nav__item tv-nav tv-nav__item-bkc" id="bkc">
         <button class="btn btn__secondary btn__block">ВКС</button>
-        <div class="menu-bkc tooltip" id="bkc-options">
-          <button class="menu-bkc__item">
-            <svg class="icon menu-bkc__item-icon">
-              <use xlink:href="./img/sprites/sprite-icons.svg#arrow_left"></use>
-            </svg>
-          </button>
-          <span class="menu__line"></span>
-          <button class="menu-bkc__item menu-bkc__item-right">
-            <svg class="icon menu-bkc__item-icon">
-              <use xlink:href="./img/sprites/sprite-icons.svg#arrow_right"></use>
-            </svg>
-          </button>
-        </div>
+<!--        <div class="menu-bkc tooltip" id="bkc-options">-->
+<!--          <button class="menu-bkc__item">-->
+<!--            <svg class="icon menu-bkc__item-icon">-->
+<!--              <use xlink:href="./img/sprites/sprite-icons.svg#arrow_left"></use>-->
+<!--            </svg>-->
+<!--          </button>-->
+<!--          <span class="menu__line"></span>-->
+<!--          <button class="menu-bkc__item menu-bkc__item-right">-->
+<!--            <svg class="icon menu-bkc__item-icon">-->
+<!--              <use xlink:href="./img/sprites/sprite-icons.svg#arrow_right"></use>-->
+<!--            </svg>-->
+<!--          </button>-->
+<!--        </div>-->
       </div>
-
       <div class="tv-nav__item tv-nav__item-tv" id="tv">
         <button class="btn btn__secondary btn__block">ТВ</button>
         <div class="menu-tv tooltip">
@@ -67,9 +65,410 @@
           </button>
         </div>
       </div>
-
       <div class="tv-nav__item tv-nav__item-mobile-btn">
         <button class="btn btn__secondary btn__block">Контент</button>
+      </div>
+    </div>
+  </div>
+  <div class="number-nav d-none" id="number-panel">
+    <div class="speed-dial">
+      <div class="speed-dial__heading">
+        <span>Быстрый набор</span>
+      </div>
+      <div class="speed-dial__item">243345245</div>
+      <div class="speed-dial__item">3233</div>
+    </div>
+    <div class="number-panel">
+      <div class="number">
+        <div class="number__output">192168254254</div>
+        <button class="number__clear">
+          <svg class="icon number__clear-icon">
+            <use xlink:href="./img/sprites/sprite-icons.svg#reset"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="numbers-panel">
+        <button class="btn btn__secondary btn__circle">1</button>
+        <button class="btn btn__secondary btn__circle">2</button>
+        <button class="btn btn__secondary btn__circle">3</button>
+        <button class="btn btn__secondary btn__circle">4</button>
+        <button class="btn btn__secondary btn__circle">5</button>
+        <button class="btn btn__secondary btn__circle">6</button>
+        <button class="btn btn__secondary btn__circle">7</button>
+        <button class="btn btn__secondary btn__circle">8</button>
+        <button class="btn btn__secondary btn__circle">9</button>
+        <button class="btn btn__secondary btn__circle">0</button>
+        <button class="btn btn__secondary btn__circle">#</button>
+        <button class="btn btn__primary btn__circle" id="call-btn">
+          <svg class="icon call-icon">
+            <use xlink:href="./img/sprites/sprite-icons.svg#phone"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="meeting-room d-none" id="meeting-room">
+    <div class="classrooms">
+      <div class="rooms">
+        <button class="rooms__exit" id="exit-room">
+          <svg class="icon rooms__exit-icon">
+            <use xlink:href="./img/sprites/sprite-icons.svg#exit"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="speed-dial classrooms-speed-dial d-sm-none" id="room__speed-deal">
+        <button class="btn btn__secondary btn__square btn__square-sm speed-dial__keyboard-open" id="room__open-keyboard">
+          <svg class="icon speed-dial__keyboard-open-icon">
+            <use xlink:href="./img/sprites/sprite-icons.svg#set"></use>
+          </svg>
+        </button>
+        <span class="speed-dial__heading classrooms__sped-dial-heading">Клавиатура</span>
+        <div class="speed-dial__item classrooms-speed-dial__item-1">
+          243345245
+        </div>
+        <div class="speed-dial__item classrooms-speed-dial__item-2">3233</div>
+        <span class="speed-dial__subtitle classrooms-speed-dial__subtitle subtitle">Быстрый набор</span>
+      </div>
+      <div class="call-nav__mobile">
+        <div class="number__output">192168254254</div>
+        <button type="button" class="number__clear">
+          <svg class="icon number__clear-icon">
+            <use xlink:href="./img/sprites/sprite-icons.svg#reset"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="numbers-panel d-md-none" id="room__deal-number">
+        <div class="numbers-panel">
+          <button class="btn btn__secondary btn__circle">1</button>
+          <button class="btn btn__secondary btn__circle">2</button>
+          <button class="btn btn__secondary btn__circle">3</button>
+          <button class="btn btn__secondary btn__circle">4</button>
+          <button class="btn btn__secondary btn__circle">5</button>
+          <button class="btn btn__secondary btn__circle">6</button>
+          <button class="btn btn__secondary btn__circle">7</button>
+          <button class="btn btn__secondary btn__circle">8</button>
+          <button class="btn btn__secondary btn__circle">9</button>
+          <button class="btn btn__secondary btn__circle btn__circle-mobile d-none">.</button>
+          <button class="btn btn__secondary btn__circle btn-order-1">#</button>
+          <button class="btn btn__secondary btn__circle">0</button>
+        </div>
+      </div>
+    </div>
+    <div class="call-nav">
+      <div class="call-nav__number number d-sm-none">
+        <div class="call-nav__number-output number__output">192168254254</div>
+        <button class="cell-nav__number-clear number__clear">
+          <svg class="icon number__clear-icon">
+            <use xlink:href="./img/sprites/sprite-icons.svg#reset"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="call-nav__menu">
+        <button class="btn btn__primary btn btn__circle call-nav__menu-btn">
+          <svg class="icon ">
+            <use xlink:href="./img/sprites/sprite-icons.svg#phone"></use>
+          </svg>
+        </button>
+        <button class="btn btn__secondary btn__circle btn__active call-nav__menu-btn cll-nav__menu-btn-microphone">
+          <svg class="icon menu-btn-microphone">
+            <use xlink:href="./img/sprites/sprite-icons.svg#microphone"></use>
+          </svg>
+          <svg class="icon menu-btn-microphone-off">
+            <use xlink:href="./img/sprites/sprite-icons.svg#microphone_off"></use>
+          </svg>
+        </button>
+        <button class="btn btn__red btn btn__circle call-nav__menu-btn">
+          <svg class="icon">
+            <use xlink:href="./img/sprites/sprite-icons.svg#phone_off"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="meeting-room__btns">
+        <button class="btn btn__secondary btn__block mobile-btn-left">Контент</button>
+        <button class="btn btn__secondary btn__block mobile-btn-right d-md-none">
+          <svg class="icon prev">
+            <use xlink:href="./img/sprites/sprite-icons.svg#prev"></use>
+          </svg>
+          <svg class="icon view">
+            <use xlink:href="./img/sprites/sprite-icons.svg#view"></use>
+          </svg>
+          <svg class="icon next">
+            <use xlink:href="./img/sprites/sprite-icons.svg#next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="screen-nav d-sm-none">
+      <div class="controller d-none">
+        <svg class="icon controller__top">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
+
+        <svg class="icon controller__left">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
+
+        <button class="controller__btn">OK</button>
+
+        <svg class="icon controller__right">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
+
+        <svg class="icon controller__bottom">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
+      </div>
+
+      <div class="camera d-sm-none">
+        <div class="camera__nav">
+          <button class="btn btn__secondary btn__square btn__square-sm">1</button>
+          <button class="btn btn__secondary btn__square btn__square-sm">2</button>
+          <button class="btn btn__secondary btn__square btn__square-sm btn__active">3</button>
+          <button class="btn btn__secondary btn__square btn__square-sm">4</button>
+        </div>
+        <div class="camera__subtitle subtitle text-center">Положение камеры</div>
+      </div>
+
+      <div class="screen d-sm-none">
+        <button class="btn btn__secondary btn__block mobile-btn-right">
+          <svg class="icon prev">
+            <use xlink:href="./img/sprites/sprite-icons.svg#prev"></use>
+          </svg>
+
+          <svg class="icon view">
+            <use xlink:href="./img/sprites/sprite-icons.svg#view"></use>
+          </svg>
+
+          <svg class="icon next">
+            <use xlink:href="./img/sprites/sprite-icons.svg#next"></use>
+          </svg>
+        </button>
+        <div class="screen__subtitle subtitle text-center d-sm-none">Вид экрана</div>
+      </div>
+    </div>
+  </div>
+  <div class="conversation-nav d-none" id="conversation">
+    <div class="conversation-menu-wrapper">
+      <div class="conversation-menu">
+        <div class="microphone__column">
+          <button class="btn btn__secondary btn__circle microphone__column-btn-keyboard">
+            <svg class="icon">
+              <use xlink:href="./img/sprites/sprite-icons.svg#set_2"></use>
+            </svg>
+          </button>
+          <button class="btn btn__secondary btn__circle btn__active menu__btn-microphone" id="microphone-control">
+            <svg class="icon menu__btn-microphone-icon">
+              <use xlink:href="./img/sprites/sprite-icons.svg#microphone"></use>
+            </svg>
+            <svg class="icon menu__btn-microphone-icon-off">
+              <use xlink:href="./img/sprites/sprite-icons.svg#microphone_off"></use>
+            </svg>
+          </button>
+          <span class="conversation-menu__subtitle conversation-menu__subtitle-microphone" id="microphone-control-text">Микрофон включен</span>
+        </div>
+        <div class="phone__column">
+          <button class="btn btn__red btn btn__circle" id="disconnect-conference">
+            <svg class="icon">
+              <use xlink:href="./img/sprites/sprite-icons.svg#phone_off"></use>
+            </svg>
+          </button>
+          <span class="conversation-menu__subtitle">Завершить вызов</span>
+        </div>
+      </div>
+      <button class="btn btn__secondary btn__block btn__active">Контент</button>
+    </div>
+    <div class="screen-nav -conversation mb-0 d-sm-none">
+      <div class="controller d-none">
+        <svg class="icon controller__top">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
+
+        <svg class="icon controller__left">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
+
+        <button class="controller__btn">OK</button>
+
+        <svg class="icon controller__right">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
+
+        <svg class="icon controller__bottom">
+          <use xlink:href="./img/sprites/sprite-icons.svg#top_right_bottom_left"></use>
+        </svg>
+      </div>
+
+      <div class="camera">
+        <div class="camera__nav">
+          <button class="btn btn__secondary btn__square">1</button>
+          <button class="btn btn__secondary btn__square">2</button>
+          <button class="btn btn__secondary btn__square btn__active">3</button>
+          <button class="btn btn__secondary btn__square">4</button>
+        </div>
+        <div class="camera__subtitle subtitle text-center">Положение камеры</div>
+      </div>
+
+      <div class="screen">
+        <button class="btn btn__secondary btn__block btn__screen-lg">
+          <svg class="icon prev">
+            <use xlink:href="./img/sprites/sprite-icons.svg#prev"></use>
+          </svg>
+
+          <svg class="icon view">
+            <use xlink:href="./img/sprites/sprite-icons.svg#view"></use>
+          </svg>
+
+          <svg class="icon next">
+            <use xlink:href="./img/sprites/sprite-icons.svg#next"></use>
+          </svg>
+        </button>
+        <div class="screen__subtitle subtitle text-center">Вид экрана</div>
+      </div>
+    </div>
+  </div>
+  <div class="section disconnect d-none" id="disconnect-confirm-screen">
+    <h3 class="section__title">Отключиться от видеоконференции?</h3>
+
+    <div class="section__item">
+      <button class="btn__disconnect btn btn__primary btn__lg" id="disconnect-conference-confirm-btn">Отключить</button>
+      <button class="btn btn__secondary btn__lg" id="not-disconnect-conference-btn">Нет, оставить</button>
+    </div>
+  </div>
+  <div class="section disconnect d-none" id="switch-off-system">
+    <h3 class="section__title">Выключить систему?</h3>
+
+    <div class="section__item">
+      <button type="button" class="btn__disconnect btn btn__primary btn__lg" id="switch-off-system-btn">Отключить</button>
+      <button type="button" class="btn btn__secondary btn__lg" id="not-switch-off-system-btn">Нет, оставить</button>
+    </div>
+  </div>
+  <div class="section d-none" id="does-not-work">
+    <h3 class="section__title">Не работает?</h3>
+
+    <span class="section__item section__item-error">Обратитесь <br/> к сервис-менеджеру</span>
+  </div>
+  <div class="section section-loading d-none" id="connecting-screen">
+    <h3 class="section__title">Соединяемся</h3>
+
+    <span class="section__item section-loading__item">5</span>
+  </div>
+  <div class="section d-none" id="time-screen">
+    <span class="section__item time">12:00</span>
+  </div>
+  <div class="section section-timer d-none" id="timer-screen">
+    <h3 class="section__title">Система скоро отключится</h3>
+    <span class="section__item section-timer__item">4:58</span>
+    <button class="btn btn__primary btn__lg">Отменить</button>
+  </div>
+  <div class="section d-none" id="instructions-screen">
+    <div class="section-instruction section-instruction-screen">
+      <span class="section__title">Подключение к экрану</span>
+
+      <div class="section__list">
+        <ol>
+          <li class="section__list-item">
+            Для проводного подключения на столе вытяните провод и подключите<br />
+            к своему устройству. Убедитесь, что ваше устройство перешло в режим
+            показа.
+          </li>
+          <li class="section__list-item">
+            Чтобы убрать провод обратно, нажмите кнопку в лючке около провода.
+          </li>
+          <li class="section__list-item">
+            Для вывода на экран изображения с компьютера Сигма нажмите кнопку<br />
+            «ПК».
+          </li>
+          <li class="section__list-item">
+            Для просмотра каналов телевидения нажмите кнопку «ТВ». Кнопками
+            <svg class="icon instruction__img-tegs-left">
+              <use xlink:href="./img/sprites/sprite-icons.svg#tegs"></use>
+            </svg>
+            и
+            <svg class="icon instruction__img-tegs-right">
+              <use xlink:href="./img/sprites/sprite-icons.svg#tegs"></use>
+            </svg>
+            <br />можно переключать каналы. Кнопка
+            <svg class="icon instruction__img-keyboard">
+              <use xlink:href="./img/sprites/sprite-icons.svg#set3"></use>
+            </svg>
+            открывает меню выбора<br />
+            частоиспользуемых каналов.
+          </li>
+          <li class="section__list-item">
+            Для подключения к видеоконференции нажмите кнопку ВКС.
+            Откроетсяменю<br />
+            набора номера видеоконференции.
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section-instruction section-instruction-tv">
+      <span class="section__title">Телевидение</span>
+      <div class="section__list">
+        <ol>
+          <li class="section__list-item">
+            Нажмите кнопку нужного канала телевидения, чтобы увидеть его<br />
+            наэкране.
+          </li>
+          <li class="section__list-item">
+            Для возврата в предыдущее меню нажмите кнопку
+            <svg class="icon instruction__img-return">
+              <use xlink:href="./img/sprites/sprite-icons.svg#return"></use>
+            </svg>
+            в левой части<br />панели.
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section-instruction section-instruction-setings-BKC">
+      <span class="section__title">Набор номера ВКС</span>
+      <div class="section__list">
+        <ol>
+          <li class="section__list-item">
+            Наберите номер видеоконференции (четырёхзначный номер<br />
+            виртуальной комнаты), нажмите кнопку «Начать вызов».
+          </li>
+          <li class="section__list-item">
+            Для возврата в предыдущее меню (без установления связи) нажмите<br />
+            кнопку
+            <svg class="icon instruction__img-return">
+              <use xlink:href="./img/sprites/sprite-icons.svg#return"></use>
+            </svg>
+            в левой части панели.
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section-instruction section-instruction-BKC">
+      <span class="section__title">ВКС</span>
+      <div class="section__list">
+        <ol>
+          <li class="section__list-item">
+            После подключения к видеоконференции не забудьте включить<br />
+            микрофон, если это необходимо.
+          </li>
+          <li class="section__list-item">
+            Кнопкой «Тип экрана» можно изменять расположение окон<br />
+            видеоконференции на экране телевизора.
+          </li>
+          <li class="section__list-item">
+            Для показа презентации от источников всем участникам<br />
+            видеоконференции нажмите нужную кнопку снизу. Устройство должно<br />
+            быть заранее подключено к системе (беспроводным или проводным<br />
+            способом).
+          </li>
+          <li class="section__list-item">
+            Для остановки показа презентации ещё раз нажмите выбранную кнопку.
+          </li>
+          <li class="section__list-item">
+            Чтобы отключиться от видеоконференции нажмите кнопку «Завершить<br />
+            вызов». Появится меню подтверждения отключения.
+          </li>
+        </ol>
       </div>
     </div>
   </div>

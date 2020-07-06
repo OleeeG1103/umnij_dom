@@ -6,9 +6,18 @@
   flex: 1 0 auto;
 }
 
+.conversation-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .btn {
+    align-self: center;
+  }
+}
+
 .conversation-menu {
-  display: flex; 
-  padding-bottom: 25px;
+  display: flex;
+
   .microphone__column {
     margin-right: 36px;
     position: relative;
