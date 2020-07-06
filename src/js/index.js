@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const $exitRoomBtn = document.getElementById("exit-room");
   const $disconnectConference = document.getElementById("disconnect-conference");
   const $microphoneControl = document.getElementById("microphone-control");
+  const $microphoneControlText = document.getElementById("microphone-control-text");
   const $roomOpenKeyboard = document.getElementById("room__open-keyboard");
   const $btns = document.querySelectorAll(".btn");
   const $tooltips = document.querySelectorAll(".tooltip");
@@ -109,9 +110,13 @@ document.addEventListener("DOMContentLoaded", () => {
   $microphoneControl.addEventListener("click", () => {
     const controlIcon = $microphoneControl.querySelector("[*|href]:not([href])");
 
-    controlIcon.getAttribute("xlink:href") === "./img/sprites/sprite-icons.svg#microphone"
-      ? controlIcon.setAttribute("xlink:href", "./img/sprites/sprite-icons.svg#microphone_off")
-      : controlIcon.setAttribute("xlink:href", "./img/sprites/sprite-icons.svg#microphone");
+    if (controlIcon.getAttribute("xlink:href") === "./img/sprites/sprite-icons.svg#microphone") {
+      $microphoneControlText.innerText = "Выключен";
+      controlIcon.setAttribute("xlink:href", "./img/sprites/sprite-icons.svg#microphone_off");
+    } else {
+      $microphoneControlText.innerText = "Включен";
+      controlIcon.setAttribute("xlink:href", "./img/sprites/sprite-icons.svg#microphone");
+    }
   });
 
   $disconnectConference.addEventListener("click", () => {
