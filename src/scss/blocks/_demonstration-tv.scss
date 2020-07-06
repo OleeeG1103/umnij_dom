@@ -38,6 +38,7 @@
       }
       .tooltip {
         display: none;
+        z-index: 9;
       }
       .btn.btn__active ~ .tooltip {
         display: flex;
