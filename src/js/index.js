@@ -70,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   $topBtnBack.addEventListener("click", () => {
     hideAllBlocks();
-    $mainWrapper.classList.contains("d-block") && $mainWrapper.classList.remove("d-block");
     $tvNav.classList.remove("d-none");
     $topBtnBackContainer.classList.remove("d-block");
   })
@@ -159,6 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function hideAllBlocks() {
     const allParentBlocks = document.querySelectorAll("main > *");
     allParentBlocks.forEach(block => !block.classList.contains("d-none") && block.classList.add("d-none"));
+    if ($mainWrapper.classList.contains("d-block")) $mainWrapper.classList.remove("d-block");
   }
 });
 
@@ -171,6 +171,7 @@ function handleBack(prev, cur) {
 function channelViewSwither(tvNav, channelsMenu, wrapper) {
   tvNav.classList.add("d-none");
   channelsMenu.classList.remove("d-none");
+  // to display correctly with scroll
   wrapper.classList.add("d-block");
 }
 
