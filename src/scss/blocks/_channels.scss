@@ -1,6 +1,6 @@
 .channels-menu {
   display: grid;
-  grid-template: repeat(3, minmax(76px, 112px)) / repeat(5, minmax(106px, 158px));
+  grid-template-columns: repeat(5, 158px);
   grid-gap: 16px;
   align-content: center;
   justify-content: center;
@@ -8,6 +8,7 @@
 
   &__item {
     border: 2px solid rgba(255, 255, 255, 0.1) !important;
+    height: 112px;
 
     img {
       max-width: 85%;

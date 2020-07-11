@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const $mainWrapper = document.querySelector("main");
   const $recordBtn = document.getElementById("record");
   const $powerOffBtn = document.getElementById("power-off-btn");
   const $switchOffSystemBtn = document.getElementById("switch-off-system-btn");
@@ -63,12 +64,13 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleMenuTooltip($TVMenuItemBtn);
 
   $openChannelsBtn.addEventListener("click", () => {
-    channelViewSwither($tvNav, $channelsMenu);
+    channelViewSwither($tvNav, $channelsMenu, $mainWrapper);
     $topBtnBackContainer.classList.add("d-block");
   });
 
   $topBtnBack.addEventListener("click", () => {
     hideAllBlocks();
+    $mainWrapper.classList.contains("d-block") && $mainWrapper.classList.remove("d-block");
     $tvNav.classList.remove("d-none");
     $topBtnBackContainer.classList.remove("d-block");
   })
@@ -166,9 +168,10 @@ function handleBack(prev, cur) {
   prev.classList.remove("d-none");
 }
 
-function channelViewSwither(tvNav, channelsMenu) {
+function channelViewSwither(tvNav, channelsMenu, wrapper) {
   tvNav.classList.add("d-none");
   channelsMenu.classList.remove("d-none");
+  wrapper.classList.add("d-block");
 }
 
 function clearCheckedTVOptionsOnTooltipHide(elems) {
